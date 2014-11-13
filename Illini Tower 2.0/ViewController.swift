@@ -10,6 +10,9 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -18,6 +21,66 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    
+    
+    
+    let emailComposer = EmailComposer()
+    
+    @IBAction func sendEmailButtonTapped(sender: AnyObject)
+    {
+        let configuredMailComposeViewController = emailComposer.configuredMailComposeViewController()
+        if emailComposer.canSendMail()
+        {
+            presentViewController(configuredMailComposeViewController, animated: true, completion: nil)
+        }
+        else
+            
+        {
+            showSendMailErrorAlert()
+        }
+    }
+    
+    func showSendMailErrorAlert() {
+        let sendMailErrorAlert = UIAlertView(title: "Could Not Send Email", message: "Your device could not send e-mail.  Please check e-mail configuration and try again.", delegate: self, cancelButtonTitle: "OK")
+        sendMailErrorAlert.show()
+    }
+    
+    
+    @IBAction func callNumber(sender: UIButton)
+    {
+        var msgTitle = "Would you like to call the front desk?"
+        var msgMessage = ""
+        var btnNo = "Cancel"
+        var btnYes = "Call"
+        
+        let title = msgTitle
+        let message = msgMessage
+        let btnLeft = btnNo
+        let btnRight = btnYes
+        
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: .Alert)
+        
+        let actionLeft = UIAlertAction(title: btnLeft, style: .Cancel, handler: nil)
+        
+        let actionRight = UIAlertAction(title: btnRight, style: .Default){ action in
+            self.phoneCall()
+        }
+        
+        alertController.addAction(actionLeft)
+        alertController.addAction(actionRight)
+        
+        presentViewController(alertController, animated: true, completion: nil)
+        
+        
+    }
+    
+    func phoneCall()
+    {
+        let phone = "tel://2173440400";
+        let url:NSURL = NSURL(string:phone)!;
+        UIApplication.sharedApplication().openURL(url);
     }
 
 

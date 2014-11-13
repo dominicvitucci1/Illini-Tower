@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B6A670611A0AC0E400845008 /* contact_your_ra.html in Resources */ = {isa = PBXBuildFile; fileRef = B6A670601A0AC0E400845008 /* contact_your_ra.html */; };
+		B6B0CCF11A06B8BF00AE98A9 /* contactYourRA.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B0CCF01A06B8BF00AE98A9 /* contactYourRA.swift */; };
+		B6D3B69A1A001BD300563FE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D3B6991A001BD300563FE8 /* AppDelegate.swift */; };
+		B6D3B69D1A001BD300563FE8 /* Illini_Tower_2_0.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B6D3B69B1A001BD300563FE8 /* Illini_Tower_2_0.xcdatamodeld */; };
+		B6D3B69F1A001BD300563FE8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D3B69E1A001BD300563FE8 /* ViewController.swift */; };
+		B6D3B6A21A001BD300563FE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6D3B6A01A001BD300563FE8 /* Main.storyboard */; };
+		B6D3B6A41A001BD300563FE8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6D3B6A31A001BD300563FE8 /* Images.xcassets */; };
+		B6D3B6A71A001BD300563FE8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6D3B6A51A001BD300563FE8 /* LaunchScreen.xib */; };
+		B6D3B6B31A001BD300563FE8 /* Illini_Tower_2_0Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D3B6B21A001BD300563FE8 /* Illini_Tower_2_0Tests.swift */; };
+		B6D3B6BD1A001C3500563FE8 /* App_Design_Home.png in Resources */ = {isa = PBXBuildFile; fileRef = B6D3B6BC1A001C3500563FE8 /* App_Design_Home.png */; };
+		B6D3B6BF1A001D4B00563FE8 /* payYourRent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D3B6BE1A001D4B00563FE8 /* payYourRent.swift */; };
+		B6D3B6C11A00205F00563FE8 /* UIIT_App_Header.png in Resources */ = {isa = PBXBuildFile; fileRef = B6D3B6C01A00205F00563FE8 /* UIIT_App_Header.png */; };
+		B6D3B6C31A002D1500563FE8 /* EmailComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D3B6C21A002D1500563FE8 /* EmailComposer.swift */; };
+		B6D3B6C51A002F6100563FE8 /* instagramView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D3B6C41A002F6100563FE8 /* instagramView.swift */; };
+		B6D3B6C71A002F6F00563FE8 /* twitterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D3B6C61A002F6F00563FE8 /* twitterView.swift */; };
+		B6D3B6C91A002F7F00563FE8 /* facebookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D3B6C81A002F7F00563FE8 /* facebookView.swift */; };
+		B6D3B6CC1A0033DB00563FE8 /* App_Design_Dining.png in Resources */ = {isa = PBXBuildFile; fileRef = B6D3B6CA1A0033DB00563FE8 /* App_Design_Dining.png */; };
+		B6D3B6CD1A0033DB00563FE8 /* App_Design_MyIllini.png in Resources */ = {isa = PBXBuildFile; fileRef = B6D3B6CB1A0033DB00563FE8 /* App_Design_MyIllini.png */; };
+		B6D3B6CF1A00528C00563FE8 /* Suggestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D3B6CE1A00528C00563FE8 /* Suggestions.swift */; };
+		B6D3B6D31A005EAF00563FE8 /* whatsNearBy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D3B6D21A005EAF00563FE8 /* whatsNearBy.swift */; };
+		B6D3B6D51A00619A00563FE8 /* events.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D3B6D41A00619A00563FE8 /* events.swift */; };
+		B6D3B6D71A0065E300563FE8 /* referAFriend.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D3B6D61A0065E300563FE8 /* referAFriend.swift */; };
+		B6D3B6D91A00992900563FE8 /* menuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D3B6D81A00992900563FE8 /* menuView.swift */; };
+		B6D3B6DB1A016BDA00563FE8 /* IT Icon Sumbission 1.2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B6D3B6DA1A016BDA00563FE8 /* IT Icon Sumbission 1.2.jpg */; };
+		B6D3B6DD1A016BE700563FE8 /* Shreve_111006_0405 icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B6D3B6DC1A016BE700563FE8 /* Shreve_111006_0405 icon.jpg */; };
+		B6D3B6DF1A0190B900563FE8 /* submitWorkOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D3B6DE1A0190B900563FE8 /* submitWorkOrder.swift */; };
+		B6D3B6E11A01917900563FE8 /* writeAReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D3B6E01A01917900563FE8 /* writeAReview.swift */; };
+		B6D3B6E41A029CE700563FE8 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6D3B6E21A029CE700563FE8 /* Bolts.framework */; };
+		B6D3B6E51A029CE700563FE8 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6D3B6E31A029CE700563FE8 /* Parse.framework */; };
+		B6D3B6E71A029D1F00563FE8 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6D3B6E61A029D1F00563FE8 /* AudioToolbox.framework */; };
+		B6D3B6E91A029D2C00563FE8 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6D3B6E81A029D2C00563FE8 /* CFNetwork.framework */; };
+		B6D3B6EB1A029D3A00563FE8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6D3B6EA1A029D3A00563FE8 /* CoreGraphics.framework */; };
+		B6D3B6ED1A029D4400563FE8 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6D3B6EC1A029D4400563FE8 /* CoreLocation.framework */; };
+		B6D3B6EF1A029D5D00563FE8 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B6D3B6EE1A029D5D00563FE8 /* libz.dylib */; };
+		B6D3B6F11A029D6700563FE8 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6D3B6F01A029D6700563FE8 /* MobileCoreServices.framework */; };
+		B6D3B6F31A029D7900563FE8 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6D3B6F21A029D7900563FE8 /* QuartzCore.framework */; };
+		B6D3B6F51A029D8400563FE8 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6D3B6F41A029D8400563FE8 /* Security.framework */; };
+		B6D3B6F71A029D8C00563FE8 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6D3B6F61A029D8C00563FE8 /* StoreKit.framework */; };
+		B6D3B6F91A029D9D00563FE8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6D3B6F81A029D9D00563FE8 /* SystemConfiguration.framework */; };
+		B6DB30611A02C95D00DC7F8D /* latePlateRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DB30601A02C95D00DC7F8D /* latePlateRequest.swift */; };
+		B6DB30631A02F1F500DC7F8D /* foodNomination.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DB30621A02F1F500DC7F8D /* foodNomination.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B6A670601A0AC0E400845008 /* contact_your_ra.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = contact_your_ra.html; sourceTree = "<group>"; };
+		B6B0CCF01A06B8BF00AE98A9 /* contactYourRA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = contactYourRA.swift; sourceTree = "<group>"; };
+		B6D3B6941A001BD300563FE8 /* Illini Tower.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Illini Tower.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6D3B6981A001BD300563FE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6D3B6991A001BD300563FE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B6D3B69C1A001BD300563FE8 /* Illini_Tower_2_0.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Illini_Tower_2_0.xcdatamodel; sourceTree = "<group>"; };
+		B6D3B69E1A001BD300563FE8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B6D3B6A11A001BD300563FE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B6D3B6A31A001BD300563FE8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B6D3B6A61A001BD300563FE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		B6D3B6AC1A001BD300563FE8 /* Illini TowerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Illini TowerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6D3B6B11A001BD300563FE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6D3B6B21A001BD300563FE8 /* Illini_Tower_2_0Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Illini_Tower_2_0Tests.swift; sourceTree = "<group>"; };
+		B6D3B6BC1A001C3500563FE8 /* App_Design_Home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = App_Design_Home.png; sourceTree = "<group>"; };
+		B6D3B6BE1A001D4B00563FE8 /* payYourRent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = payYourRent.swift; sourceTree = "<group>"; };
+		B6D3B6C01A00205F00563FE8 /* UIIT_App_Header.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UIIT_App_Header.png; sourceTree = "<group>"; };
+		B6D3B6C21A002D1500563FE8 /* EmailComposer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailComposer.swift; sourceTree = "<group>"; };
+		B6D3B6C41A002F6100563FE8 /* instagramView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = instagramView.swift; sourceTree = "<group>"; };
+		B6D3B6C61A002F6F00563FE8 /* twitterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = twitterView.swift; sourceTree = "<group>"; };
+		B6D3B6C81A002F7F00563FE8 /* facebookView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = facebookView.swift; sourceTree = "<group>"; };
+		B6D3B6CA1A0033DB00563FE8 /* App_Design_Dining.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = App_Design_Dining.png; sourceTree = "<group>"; };
+		B6D3B6CB1A0033DB00563FE8 /* App_Design_MyIllini.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = App_Design_MyIllini.png; sourceTree = "<group>"; };
+		B6D3B6CE1A00528C00563FE8 /* Suggestions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Suggestions.swift; sourceTree = "<group>"; };
+		B6D3B6D21A005EAF00563FE8 /* whatsNearBy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = whatsNearBy.swift; sourceTree = "<group>"; };
+		B6D3B6D41A00619A00563FE8 /* events.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = events.swift; sourceTree = "<group>"; };
+		B6D3B6D61A0065E300563FE8 /* referAFriend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = referAFriend.swift; sourceTree = "<group>"; };
+		B6D3B6D81A00992900563FE8 /* menuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = menuView.swift; sourceTree = "<group>"; };
+		B6D3B6DA1A016BDA00563FE8 /* IT Icon Sumbission 1.2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "IT Icon Sumbission 1.2.jpg"; sourceTree = "<group>"; };
+		B6D3B6DC1A016BE700563FE8 /* Shreve_111006_0405 icon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Shreve_111006_0405 icon.jpg"; sourceTree = "<group>"; };
+		B6D3B6DE1A0190B900563FE8 /* submitWorkOrder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = submitWorkOrder.swift; sourceTree = "<group>"; };
+		B6D3B6E01A01917900563FE8 /* writeAReview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = writeAReview.swift; sourceTree = "<group>"; };
+		B6D3B6E21A029CE700563FE8 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		B6D3B6E31A029CE700563FE8 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		B6D3B6E61A029D1F00563FE8 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		B6D3B6E81A029D2C00563FE8 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		B6D3B6EA1A029D3A00563FE8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B6D3B6EC1A029D4400563FE8 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		B6D3B6EE1A029D5D00563FE8 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		B6D3B6F01A029D6700563FE8 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		B6D3B6F21A029D7900563FE8 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		B6D3B6F41A029D8400563FE8 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		B6D3B6F61A029D8C00563FE8 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		B6D3B6F81A029D9D00563FE8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		B6D3B6FA1A029E1600563FE8 /* Illini Tower 2.0-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Illini Tower 2.0-Bridging-Header.h"; sourceTree = "<group>"; };
+		B6DB30601A02C95D00DC7F8D /* latePlateRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = latePlateRequest.swift; sourceTree = "<group>"; };
+		B6DB30621A02F1F500DC7F8D /* foodNomination.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = foodNomination.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B6D3B6911A001BD300563FE8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6D3B6F91A029D9D00563FE8 /* SystemConfiguration.framework in Frameworks */,
+				B6D3B6F71A029D8C00563FE8 /* StoreKit.framework in Frameworks */,
+				B6D3B6F51A029D8400563FE8 /* Security.framework in Frameworks */,
+				B6D3B6F31A029D7900563FE8 /* QuartzCore.framework in Frameworks */,
+				B6D3B6F11A029D6700563FE8 /* MobileCoreServices.framework in Frameworks */,
+				B6D3B6EF1A029D5D00563FE8 /* libz.dylib in Frameworks */,
+				B6D3B6ED1A029D4400563FE8 /* CoreLocation.framework in Frameworks */,
+				B6D3B6EB1A029D3A00563FE8 /* CoreGraphics.framework in Frameworks */,
+				B6D3B6E91A029D2C00563FE8 /* CFNetwork.framework in Frameworks */,
+				B6D3B6E71A029D1F00563FE8 /* AudioToolbox.framework in Frameworks */,
+				B6D3B6E51A029CE700563FE8 /* Parse.framework in Frameworks */,
+				B6D3B6E41A029CE700563FE8 /* Bolts.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6D3B6A91A001BD300563FE8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B6D3B68B1A001BD300563FE8 = {
+			isa = PBXGroup;
+			children = (
+				B6A670601A0AC0E400845008 /* contact_your_ra.html */,
+				B6D3B6F81A029D9D00563FE8 /* SystemConfiguration.framework */,
+				B6D3B6F61A029D8C00563FE8 /* StoreKit.framework */,
+				B6D3B6F41A029D8400563FE8 /* Security.framework */,
+				B6D3B6F21A029D7900563FE8 /* QuartzCore.framework */,
+				B6D3B6F01A029D6700563FE8 /* MobileCoreServices.framework */,
+				B6D3B6EE1A029D5D00563FE8 /* libz.dylib */,
+				B6D3B6EC1A029D4400563FE8 /* CoreLocation.framework */,
+				B6D3B6EA1A029D3A00563FE8 /* CoreGraphics.framework */,
+				B6D3B6E81A029D2C00563FE8 /* CFNetwork.framework */,
+				B6D3B6E61A029D1F00563FE8 /* AudioToolbox.framework */,
+				B6D3B6E21A029CE700563FE8 /* Bolts.framework */,
+				B6D3B6E31A029CE700563FE8 /* Parse.framework */,
+				B6D3B6961A001BD300563FE8 /* Illini Tower Files */,
+				B6D3B6AF1A001BD300563FE8 /* Illini TowerTests */,
+				B6D3B6951A001BD300563FE8 /* Products */,
+				B6D3B6FA1A029E1600563FE8 /* Illini Tower 2.0-Bridging-Header.h */,
+			);
+			sourceTree = "<group>";
+		};
+		B6D3B6951A001BD300563FE8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B6D3B6941A001BD300563FE8 /* Illini Tower.app */,
+				B6D3B6AC1A001BD300563FE8 /* Illini TowerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B6D3B6961A001BD300563FE8 /* Illini Tower Files */ = {
+			isa = PBXGroup;
+			children = (
+				B6D3B6991A001BD300563FE8 /* AppDelegate.swift */,
+				B6D3B69E1A001BD300563FE8 /* ViewController.swift */,
+				B6D3B6A01A001BD300563FE8 /* Main.storyboard */,
+				B6B0CCF01A06B8BF00AE98A9 /* contactYourRA.swift */,
+				B6DB30621A02F1F500DC7F8D /* foodNomination.swift */,
+				B6DB30601A02C95D00DC7F8D /* latePlateRequest.swift */,
+				B6D3B6E01A01917900563FE8 /* writeAReview.swift */,
+				B6D3B6D81A00992900563FE8 /* menuView.swift */,
+				B6D3B6DE1A0190B900563FE8 /* submitWorkOrder.swift */,
+				B6D3B6D41A00619A00563FE8 /* events.swift */,
+				B6D3B6D21A005EAF00563FE8 /* whatsNearBy.swift */,
+				B6D3B6CE1A00528C00563FE8 /* Suggestions.swift */,
+				B6D3B6D61A0065E300563FE8 /* referAFriend.swift */,
+				B6D3B6C41A002F6100563FE8 /* instagramView.swift */,
+				B6D3B6C61A002F6F00563FE8 /* twitterView.swift */,
+				B6D3B6C81A002F7F00563FE8 /* facebookView.swift */,
+				B6D3B6C21A002D1500563FE8 /* EmailComposer.swift */,
+				B6D3B6BE1A001D4B00563FE8 /* payYourRent.swift */,
+				B6D3B6A31A001BD300563FE8 /* Images.xcassets */,
+				B6D3B6A51A001BD300563FE8 /* LaunchScreen.xib */,
+				B6D3B69B1A001BD300563FE8 /* Illini_Tower_2_0.xcdatamodeld */,
+				B6D3B6971A001BD300563FE8 /* Supporting Files */,
+			);
+			name = "Illini Tower Files";
+			path = "Illini Tower 2.0";
+			sourceTree = "<group>";
+		};
+		B6D3B6971A001BD300563FE8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B6D3B6DC1A016BE700563FE8 /* Shreve_111006_0405 icon.jpg */,
+				B6D3B6DA1A016BDA00563FE8 /* IT Icon Sumbission 1.2.jpg */,
+				B6D3B6CA1A0033DB00563FE8 /* App_Design_Dining.png */,
+				B6D3B6CB1A0033DB00563FE8 /* App_Design_MyIllini.png */,
+				B6D3B6C01A00205F00563FE8 /* UIIT_App_Header.png */,
+				B6D3B6BC1A001C3500563FE8 /* App_Design_Home.png */,
+				B6D3B6981A001BD300563FE8 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B6D3B6AF1A001BD300563FE8 /* Illini TowerTests */ = {
+			isa = PBXGroup;
+			children = (
+				B6D3B6B21A001BD300563FE8 /* Illini_Tower_2_0Tests.swift */,
+				B6D3B6B01A001BD300563FE8 /* Supporting Files */,
+			);
+			name = "Illini TowerTests";
+			path = "Illini Tower 2.0Tests";
+			sourceTree = "<group>";
+		};
+		B6D3B6B01A001BD300563FE8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B6D3B6B11A001BD300563FE8 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B6D3B6931A001BD300563FE8 /* Illini Tower */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6D3B6B61A001BD300563FE8 /* Build configuration list for PBXNativeTarget "Illini Tower" */;
+			buildPhases = (
+				B6D3B6901A001BD300563FE8 /* Sources */,
+				B6D3B6911A001BD300563FE8 /* Frameworks */,
+				B6D3B6921A001BD300563FE8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Illini Tower";
+			productName = "Illini Tower 2.0";
+			productReference = B6D3B6941A001BD300563FE8 /* Illini Tower.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B6D3B6AB1A001BD300563FE8 /* Illini TowerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6D3B6B91A001BD300563FE8 /* Build configuration list for PBXNativeTarget "Illini TowerTests" */;
+			buildPhases = (
+				B6D3B6A81A001BD300563FE8 /* Sources */,
+				B6D3B6A91A001BD300563FE8 /* Frameworks */,
+				B6D3B6AA1A001BD300563FE8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Illini TowerTests";
+			productName = "Illini Tower 2.0Tests";
+			productReference = B6D3B6AC1A001BD300563FE8 /* Illini TowerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B6D3B68C1A001BD300563FE8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Dominic Vitucci";
+				TargetAttributes = {
+					B6D3B6931A001BD300563FE8 = {
+						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = 47Q8HR9LV3;
+					};
+					B6D3B6AB1A001BD300563FE8 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = B6D3B6931A001BD300563FE8;
+					};
+				};
+			};
+			buildConfigurationList = B6D3B68F1A001BD300563FE8 /* Build configuration list for PBXProject "Illini Tower" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B6D3B68B1A001BD300563FE8;
+			productRefGroup = B6D3B6951A001BD300563FE8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B6D3B6931A001BD300563FE8 /* Illini Tower */,
+				B6D3B6AB1A001BD300563FE8 /* Illini TowerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B6D3B6921A001BD300563FE8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6D3B6BD1A001C3500563FE8 /* App_Design_Home.png in Resources */,
+				B6D3B6DD1A016BE700563FE8 /* Shreve_111006_0405 icon.jpg in Resources */,
+				B6D3B6CD1A0033DB00563FE8 /* App_Design_MyIllini.png in Resources */,
+				B6A670611A0AC0E400845008 /* contact_your_ra.html in Resources */,
+				B6D3B6A21A001BD300563FE8 /* Main.storyboard in Resources */,
+				B6D3B6A71A001BD300563FE8 /* LaunchScreen.xib in Resources */,
+				B6D3B6DB1A016BDA00563FE8 /* IT Icon Sumbission 1.2.jpg in Resources */,
+				B6D3B6A41A001BD300563FE8 /* Images.xcassets in Resources */,
+				B6D3B6CC1A0033DB00563FE8 /* App_Design_Dining.png in Resources */,
+				B6D3B6C11A00205F00563FE8 /* UIIT_App_Header.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6D3B6AA1A001BD300563FE8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B6D3B6901A001BD300563FE8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6B0CCF11A06B8BF00AE98A9 /* contactYourRA.swift in Sources */,
+				B6D3B6C31A002D1500563FE8 /* EmailComposer.swift in Sources */,
+				B6D3B6DF1A0190B900563FE8 /* submitWorkOrder.swift in Sources */,
+				B6D3B69F1A001BD300563FE8 /* ViewController.swift in Sources */,
+				B6D3B6C91A002F7F00563FE8 /* facebookView.swift in Sources */,
+				B6D3B6CF1A00528C00563FE8 /* Suggestions.swift in Sources */,
+				B6D3B69D1A001BD300563FE8 /* Illini_Tower_2_0.xcdatamodeld in Sources */,
+				B6DB30611A02C95D00DC7F8D /* latePlateRequest.swift in Sources */,
+				B6D3B6C51A002F6100563FE8 /* instagramView.swift in Sources */,
+				B6D3B6D51A00619A00563FE8 /* events.swift in Sources */,
+				B6D3B6D31A005EAF00563FE8 /* whatsNearBy.swift in Sources */,
+				B6D3B6E11A01917900563FE8 /* writeAReview.swift in Sources */,
+				B6D3B6D91A00992900563FE8 /* menuView.swift in Sources */,
+				B6D3B6BF1A001D4B00563FE8 /* payYourRent.swift in Sources */,
+				B6D3B69A1A001BD300563FE8 /* AppDelegate.swift in Sources */,
+				B6DB30631A02F1F500DC7F8D /* foodNomination.swift in Sources */,
+				B6D3B6D71A0065E300563FE8 /* referAFriend.swift in Sources */,
+				B6D3B6C71A002F6F00563FE8 /* twitterView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6D3B6A81A001BD300563FE8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6D3B6B31A001BD300563FE8 /* Illini_Tower_2_0Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B6D3B6A01A001BD300563FE8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B6D3B6A11A001BD300563FE8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B6D3B6A51A001BD300563FE8 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B6D3B6A61A001BD300563FE8 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B6D3B6B41A001BD300563FE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Dominic Vitucci (47Q8HR9LV3)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Dominic Vitucci (47Q8HR9LV3)";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B6D3B6B51A001BD300563FE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Dominic Vitucci (47Q8HR9LV3)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Dominic Vitucci (47Q8HR9LV3)";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B6D3B6B71A001BD300563FE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "Illini Tower 2.0/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "Illini Tower";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Illini Tower 2.0-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B6D3B6B81A001BD300563FE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "Illini Tower 2.0/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "Illini Tower";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Illini Tower 2.0-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		B6D3B6BA1A001BD300563FE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Illini Tower 2.0Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "Illini TowerTests";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Illini Tower 2.0.app/Illini Tower 2.0";
+			};
+			name = Debug;
+		};
+		B6D3B6BB1A001BD300563FE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Illini Tower 2.0Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "Illini TowerTests";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Illini Tower 2.0.app/Illini Tower 2.0";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B6D3B68F1A001BD300563FE8 /* Build configuration list for PBXProject "Illini Tower" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6D3B6B41A001BD300563FE8 /* Debug */,
+				B6D3B6B51A001BD300563FE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6D3B6B61A001BD300563FE8 /* Build configuration list for PBXNativeTarget "Illini Tower" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6D3B6B71A001BD300563FE8 /* Debug */,
+				B6D3B6B81A001BD300563FE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6D3B6B91A001BD300563FE8 /* Build configuration list for PBXNativeTarget "Illini TowerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6D3B6BA1A001BD300563FE8 /* Debug */,
+				B6D3B6BB1A001BD300563FE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B6D3B69B1A001BD300563FE8 /* Illini_Tower_2_0.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B6D3B69C1A001BD300563FE8 /* Illini_Tower_2_0.xcdatamodel */,
+			);
+			currentVersion = B6D3B69C1A001BD300563FE8 /* Illini_Tower_2_0.xcdatamodel */;
+			path = Illini_Tower_2_0.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B6D3B68C1A001BD300563FE8 /* Project object */;
+}
