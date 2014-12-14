@@ -24,8 +24,7 @@ class facebookView: UIViewController
         
         super.loadView()
         
-        
-        
+    
         loadURL()
         
     }

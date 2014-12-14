@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B621A34F1A313CCB00A3F825 /* Top Bar Slice 44.png in Resources */ = {isa = PBXBuildFile; fileRef = B621A34C1A313CCB00A3F825 /* Top Bar Slice 44.png */; };
+		B621A3501A313CCB00A3F825 /* Top Bar Slice 88.png in Resources */ = {isa = PBXBuildFile; fileRef = B621A34D1A313CCB00A3F825 /* Top Bar Slice 88.png */; };
+		B621A3511A313CCB00A3F825 /* Top Bar Slice 132.png in Resources */ = {isa = PBXBuildFile; fileRef = B621A34E1A313CCB00A3F825 /* Top Bar Slice 132.png */; };
+		B621A3571A31702300A3F825 /* App_Dining.png in Resources */ = {isa = PBXBuildFile; fileRef = B621A3541A31702300A3F825 /* App_Dining.png */; };
+		B621A3581A31702300A3F825 /* App_Home_Screen.png in Resources */ = {isa = PBXBuildFile; fileRef = B621A3551A31702300A3F825 /* App_Home_Screen.png */; };
+		B621A3591A31702300A3F825 /* App_MyIllini.png in Resources */ = {isa = PBXBuildFile; fileRef = B621A3561A31702300A3F825 /* App_MyIllini.png */; };
 		B6A670611A0AC0E400845008 /* contact_your_ra.html in Resources */ = {isa = PBXBuildFile; fileRef = B6A670601A0AC0E400845008 /* contact_your_ra.html */; };
 		B6B0CCF11A06B8BF00AE98A9 /* contactYourRA.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B0CCF01A06B8BF00AE98A9 /* contactYourRA.swift */; };
 		B6D3B69A1A001BD300563FE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D3B6991A001BD300563FE8 /* AppDelegate.swift */; };
@@ -16,28 +22,22 @@
 		B6D3B6A41A001BD300563FE8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6D3B6A31A001BD300563FE8 /* Images.xcassets */; };
 		B6D3B6A71A001BD300563FE8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6D3B6A51A001BD300563FE8 /* LaunchScreen.xib */; };
 		B6D3B6B31A001BD300563FE8 /* Illini_Tower_2_0Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D3B6B21A001BD300563FE8 /* Illini_Tower_2_0Tests.swift */; };
-		B6D3B6BD1A001C3500563FE8 /* App_Design_Home.png in Resources */ = {isa = PBXBuildFile; fileRef = B6D3B6BC1A001C3500563FE8 /* App_Design_Home.png */; };
 		B6D3B6BF1A001D4B00563FE8 /* payYourRent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D3B6BE1A001D4B00563FE8 /* payYourRent.swift */; };
-		B6D3B6C11A00205F00563FE8 /* UIIT_App_Header.png in Resources */ = {isa = PBXBuildFile; fileRef = B6D3B6C01A00205F00563FE8 /* UIIT_App_Header.png */; };
 		B6D3B6C31A002D1500563FE8 /* EmailComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D3B6C21A002D1500563FE8 /* EmailComposer.swift */; };
 		B6D3B6C51A002F6100563FE8 /* instagramView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D3B6C41A002F6100563FE8 /* instagramView.swift */; };
 		B6D3B6C71A002F6F00563FE8 /* twitterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D3B6C61A002F6F00563FE8 /* twitterView.swift */; };
 		B6D3B6C91A002F7F00563FE8 /* facebookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D3B6C81A002F7F00563FE8 /* facebookView.swift */; };
-		B6D3B6CC1A0033DB00563FE8 /* App_Design_Dining.png in Resources */ = {isa = PBXBuildFile; fileRef = B6D3B6CA1A0033DB00563FE8 /* App_Design_Dining.png */; };
-		B6D3B6CD1A0033DB00563FE8 /* App_Design_MyIllini.png in Resources */ = {isa = PBXBuildFile; fileRef = B6D3B6CB1A0033DB00563FE8 /* App_Design_MyIllini.png */; };
 		B6D3B6CF1A00528C00563FE8 /* Suggestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D3B6CE1A00528C00563FE8 /* Suggestions.swift */; };
 		B6D3B6D31A005EAF00563FE8 /* whatsNearBy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D3B6D21A005EAF00563FE8 /* whatsNearBy.swift */; };
 		B6D3B6D51A00619A00563FE8 /* events.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D3B6D41A00619A00563FE8 /* events.swift */; };
 		B6D3B6D71A0065E300563FE8 /* referAFriend.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D3B6D61A0065E300563FE8 /* referAFriend.swift */; };
 		B6D3B6D91A00992900563FE8 /* menuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D3B6D81A00992900563FE8 /* menuView.swift */; };
-		B6D3B6DB1A016BDA00563FE8 /* IT Icon Sumbission 1.2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B6D3B6DA1A016BDA00563FE8 /* IT Icon Sumbission 1.2.jpg */; };
-		B6D3B6DD1A016BE700563FE8 /* Shreve_111006_0405 icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B6D3B6DC1A016BE700563FE8 /* Shreve_111006_0405 icon.jpg */; };
 		B6D3B6DF1A0190B900563FE8 /* submitWorkOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D3B6DE1A0190B900563FE8 /* submitWorkOrder.swift */; };
 		B6D3B6E11A01917900563FE8 /* writeAReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D3B6E01A01917900563FE8 /* writeAReview.swift */; };
 		B6D3B6E41A029CE700563FE8 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6D3B6E21A029CE700563FE8 /* Bolts.framework */; };
 		B6D3B6E51A029CE700563FE8 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6D3B6E31A029CE700563FE8 /* Parse.framework */; };
 		B6D3B6E71A029D1F00563FE8 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6D3B6E61A029D1F00563FE8 /* AudioToolbox.framework */; };
-		B6D3B6E91A029D2C00563FE8 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6D3B6E81A029D2C00563FE8 /* CFNetwork.framework */; };
+		B6D3B6E91A029D2C00563FE8 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6D3B6E81A029D2C00563FE8 /* CFNetwork.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		B6D3B6EB1A029D3A00563FE8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6D3B6EA1A029D3A00563FE8 /* CoreGraphics.framework */; };
 		B6D3B6ED1A029D4400563FE8 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6D3B6EC1A029D4400563FE8 /* CoreLocation.framework */; };
 		B6D3B6EF1A029D5D00563FE8 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B6D3B6EE1A029D5D00563FE8 /* libz.dylib */; };
@@ -51,6 +51,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B621A34C1A313CCB00A3F825 /* Top Bar Slice 44.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Top Bar Slice 44.png"; sourceTree = "<group>"; };
+		B621A34D1A313CCB00A3F825 /* Top Bar Slice 88.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Top Bar Slice 88.png"; sourceTree = "<group>"; };
+		B621A34E1A313CCB00A3F825 /* Top Bar Slice 132.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Top Bar Slice 132.png"; sourceTree = "<group>"; };
+		B621A3541A31702300A3F825 /* App_Dining.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = App_Dining.png; sourceTree = "<group>"; };
+		B621A3551A31702300A3F825 /* App_Home_Screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = App_Home_Screen.png; sourceTree = "<group>"; };
+		B621A3561A31702300A3F825 /* App_MyIllini.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = App_MyIllini.png; sourceTree = "<group>"; };
 		B6A670601A0AC0E400845008 /* contact_your_ra.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = contact_your_ra.html; sourceTree = "<group>"; };
 		B6B0CCF01A06B8BF00AE98A9 /* contactYourRA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = contactYourRA.swift; sourceTree = "<group>"; };
 		B6D3B6941A001BD300563FE8 /* Illini Tower.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Illini Tower.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,22 +70,16 @@
 		B6D3B6AC1A001BD300563FE8 /* Illini TowerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Illini TowerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6D3B6B11A001BD300563FE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B6D3B6B21A001BD300563FE8 /* Illini_Tower_2_0Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Illini_Tower_2_0Tests.swift; sourceTree = "<group>"; };
-		B6D3B6BC1A001C3500563FE8 /* App_Design_Home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = App_Design_Home.png; sourceTree = "<group>"; };
 		B6D3B6BE1A001D4B00563FE8 /* payYourRent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = payYourRent.swift; sourceTree = "<group>"; };
-		B6D3B6C01A00205F00563FE8 /* UIIT_App_Header.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UIIT_App_Header.png; sourceTree = "<group>"; };
 		B6D3B6C21A002D1500563FE8 /* EmailComposer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailComposer.swift; sourceTree = "<group>"; };
 		B6D3B6C41A002F6100563FE8 /* instagramView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = instagramView.swift; sourceTree = "<group>"; };
 		B6D3B6C61A002F6F00563FE8 /* twitterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = twitterView.swift; sourceTree = "<group>"; };
 		B6D3B6C81A002F7F00563FE8 /* facebookView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = facebookView.swift; sourceTree = "<group>"; };
-		B6D3B6CA1A0033DB00563FE8 /* App_Design_Dining.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = App_Design_Dining.png; sourceTree = "<group>"; };
-		B6D3B6CB1A0033DB00563FE8 /* App_Design_MyIllini.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = App_Design_MyIllini.png; sourceTree = "<group>"; };
 		B6D3B6CE1A00528C00563FE8 /* Suggestions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Suggestions.swift; sourceTree = "<group>"; };
 		B6D3B6D21A005EAF00563FE8 /* whatsNearBy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = whatsNearBy.swift; sourceTree = "<group>"; };
 		B6D3B6D41A00619A00563FE8 /* events.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = events.swift; sourceTree = "<group>"; };
 		B6D3B6D61A0065E300563FE8 /* referAFriend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = referAFriend.swift; sourceTree = "<group>"; };
 		B6D3B6D81A00992900563FE8 /* menuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = menuView.swift; sourceTree = "<group>"; };
-		B6D3B6DA1A016BDA00563FE8 /* IT Icon Sumbission 1.2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "IT Icon Sumbission 1.2.jpg"; sourceTree = "<group>"; };
-		B6D3B6DC1A016BE700563FE8 /* Shreve_111006_0405 icon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Shreve_111006_0405 icon.jpg"; sourceTree = "<group>"; };
 		B6D3B6DE1A0190B900563FE8 /* submitWorkOrder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = submitWorkOrder.swift; sourceTree = "<group>"; };
 		B6D3B6E01A01917900563FE8 /* writeAReview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = writeAReview.swift; sourceTree = "<group>"; };
 		B6D3B6E21A029CE700563FE8 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
@@ -194,12 +194,12 @@
 		B6D3B6971A001BD300563FE8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				B6D3B6DC1A016BE700563FE8 /* Shreve_111006_0405 icon.jpg */,
-				B6D3B6DA1A016BDA00563FE8 /* IT Icon Sumbission 1.2.jpg */,
-				B6D3B6CA1A0033DB00563FE8 /* App_Design_Dining.png */,
-				B6D3B6CB1A0033DB00563FE8 /* App_Design_MyIllini.png */,
-				B6D3B6C01A00205F00563FE8 /* UIIT_App_Header.png */,
-				B6D3B6BC1A001C3500563FE8 /* App_Design_Home.png */,
+				B621A3541A31702300A3F825 /* App_Dining.png */,
+				B621A3551A31702300A3F825 /* App_Home_Screen.png */,
+				B621A3561A31702300A3F825 /* App_MyIllini.png */,
+				B621A34C1A313CCB00A3F825 /* Top Bar Slice 44.png */,
+				B621A34D1A313CCB00A3F825 /* Top Bar Slice 88.png */,
+				B621A34E1A313CCB00A3F825 /* Top Bar Slice 132.png */,
 				B6D3B6981A001BD300563FE8 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -303,16 +303,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6D3B6BD1A001C3500563FE8 /* App_Design_Home.png in Resources */,
-				B6D3B6DD1A016BE700563FE8 /* Shreve_111006_0405 icon.jpg in Resources */,
-				B6D3B6CD1A0033DB00563FE8 /* App_Design_MyIllini.png in Resources */,
+				B621A3591A31702300A3F825 /* App_MyIllini.png in Resources */,
+				B621A3501A313CCB00A3F825 /* Top Bar Slice 88.png in Resources */,
 				B6A670611A0AC0E400845008 /* contact_your_ra.html in Resources */,
 				B6D3B6A21A001BD300563FE8 /* Main.storyboard in Resources */,
 				B6D3B6A71A001BD300563FE8 /* LaunchScreen.xib in Resources */,
-				B6D3B6DB1A016BDA00563FE8 /* IT Icon Sumbission 1.2.jpg in Resources */,
+				B621A3581A31702300A3F825 /* App_Home_Screen.png in Resources */,
 				B6D3B6A41A001BD300563FE8 /* Images.xcassets in Resources */,
-				B6D3B6CC1A0033DB00563FE8 /* App_Design_Dining.png in Resources */,
-				B6D3B6C11A00205F00563FE8 /* UIIT_App_Header.png in Resources */,
+				B621A3571A31702300A3F825 /* App_Dining.png in Resources */,
+				B621A34F1A313CCB00A3F825 /* Top Bar Slice 44.png in Resources */,
+				B621A3511A313CCB00A3F825 /* Top Bar Slice 132.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

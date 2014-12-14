@@ -18,19 +18,51 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         
+        
+        
+        UINavigationBar.appearance().setBackgroundImage(UIImage(named: "Top Bar Test"), forBarMetrics: UIBarMetrics.Default)
+                
+        
+        //Parse.com Setup
         Parse.setApplicationId("f42OCeAicD2YSb374hgdZH8yyV5HZciiw0wtQhGt", clientKey:"pBJczdgkxpBihlG2GJpPye1hA7DuyEtTqZaVqJBZ")
         
         PFAnalytics.trackAppOpenedWithLaunchOptionsInBackground(launchOptions, block: nil)
         
+        if application.respondsToSelector("isRegisteredForRemoteNotifications")
+        {
+            // iOS 8 Notifications
+            // Code for iOS 8 with Parse.com
+            
+            application.registerUserNotificationSettings(UIUserNotificationSettings(forTypes: (.Badge | .Sound | .Alert), categories: nil));
+            application.registerForRemoteNotifications()
+            NSLog("Device is running iOS 8 or above")
+        }
+        else
+        {
+            // iOS < 8 Notifications
+            // Code for iOS 7 with Parse.com
+            
+            application.registerForRemoteNotificationTypes(.Badge | .Sound | .Alert)
+            NSLog("Device is running iOS 7 or earlier")
+        }
         
-        var notificationType: UIUserNotificationType = UIUserNotificationType.Alert | UIUserNotificationType.Badge | UIUserNotificationType.Sound
-        
-        var settings: UIUserNotificationSettings = UIUserNotificationSettings(forTypes: notificationType, categories: nil)
-        UIApplication.sharedApplication().registerUserNotificationSettings(settings)
-        UIApplication.sharedApplication().registerForRemoteNotifications()
-        
-        //UIApplication.sharedApplication().registerUserNotificationSettings(notificationSettings)
-        // Override point for customization after application launch.
+//        Code for iOS 7 with Parse.com
+//        
+//        var types = UIRemoteNotificationType.Badge | UIRemoteNotificationType.Sound | UIRemoteNotificationType.Alert
+//        
+//        UIApplication.sharedApplication().registerForRemoteNotificationTypes(types)
+//        NSLog("Working")
+//
+//        Code for iOS 8 with Parse.com
+//
+//        var notificationType: UIUserNotificationType = UIUserNotificationType.Alert | UIUserNotificationType.Badge | UIUserNotificationType.Sound
+//        
+//        var settings: UIUserNotificationSettings = UIUserNotificationSettings(forTypes: notificationType, categories: nil)
+//        UIApplication.sharedApplication().registerUserNotificationSettings(settings)
+//        UIApplication.sharedApplication().registerForRemoteNotifications()
+//
+//        UIApplication.sharedApplication().registerUserNotificationSettings(notificationSettings)
+//        Override point for customization after application launch.
         
         
         return true

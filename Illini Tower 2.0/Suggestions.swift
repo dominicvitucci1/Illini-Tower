@@ -29,7 +29,7 @@ class Suggestions: UIViewController, MFMailComposeViewControllerDelegate, UIText
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         
         nameField.delegate = self
         emailAddressField.delegate = self
@@ -52,6 +52,7 @@ class Suggestions: UIViewController, MFMailComposeViewControllerDelegate, UIText
         }
         
     }
+    
     
     override func viewWillDisappear(animated: Bool) {
         super.viewWillDisappear(animated)
