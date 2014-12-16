@@ -1,11 +1,156 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="uXm-tc-QVh">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="fAI-Nf-DO3">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
+        <!--View Controller-->
+        <scene sceneID="v8j-Qx-Hh9">
+            <objects>
+                <viewController autoresizesArchivedViewToFullSize="NO" id="5YJ-bM-EXx" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zXB-Sg-uLR"/>
+                        <viewControllerLayoutGuide type="bottom" id="nQJ-Ng-zrm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Wgs-Ak-aza">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6xQ-jf-T2b" userLabel="My Illini Tower">
+                                <rect key="frame" x="0.0" y="0.0" width="300" height="200"/>
+                                <state key="normal" title="Button" backgroundImage="My Illini Tower Slice.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5P7-uE-cYk" userLabel="Dining">
+                                <rect key="frame" x="300" y="0.0" width="300" height="200"/>
+                                <state key="normal" title="Button" backgroundImage="Dining Slice.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Mr-Au-dJ3" userLabel="Email us">
+                                <rect key="frame" x="200" y="200" width="200" height="100"/>
+                                <state key="normal" title="Button" backgroundImage="Email Us Slice.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zjt-MB-4ZT" userLabel="Pay Your Rent">
+                                <rect key="frame" x="0.0" y="200" width="200" height="100"/>
+                                <state key="normal" title="Button" backgroundImage="Pay your rent slice.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wsf-j6-P5w" userLabel="Instagram">
+                                <rect key="frame" x="0.0" y="400" width="200" height="100"/>
+                                <state key="normal" title="Button" backgroundImage="Instagram Slice.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jRr-Vi-Qmd" userLabel="Twitter">
+                                <rect key="frame" x="200" y="400" width="200" height="100"/>
+                                <state key="normal" title="Button" backgroundImage="Twitter Slice.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gWQ-W5-zBI" userLabel="Facebook">
+                                <rect key="frame" x="400" y="400" width="200" height="100"/>
+                                <state key="normal" title="Button" backgroundImage="Facebook Slice.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2E4-oT-wrq" userLabel="Call Us">
+                                <rect key="frame" x="200" y="300" width="200" height="100"/>
+                                <state key="normal" title="Button" backgroundImage="Call Us Slice.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="47y-MN-ZuI" userLabel="What's Nearby">
+                                <rect key="frame" x="400" y="300" width="200" height="100"/>
+                                <state key="normal" title="Button" backgroundImage="What's Near By Slice.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AcD-Cg-eCk" userLabel="Events">
+                                <rect key="frame" x="400" y="200" width="200" height="100"/>
+                                <state key="normal" title="Button" backgroundImage="Events Slice.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kpK-gI-RfS" userLabel="Suggestions">
+                                <rect key="frame" x="0.0" y="300" width="200" height="100"/>
+                                <state key="normal" title="Button" backgroundImage="Suggestions Slice.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.12549019607843137" green="0.14901960784313725" blue="0.1803921568627451" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="5Mr-Au-dJ3" firstAttribute="centerX" secondItem="Wgs-Ak-aza" secondAttribute="centerX" id="0I6-lg-nq0"/>
+                            <constraint firstItem="5Mr-Au-dJ3" firstAttribute="leading" secondItem="Zjt-MB-4ZT" secondAttribute="trailing" id="0Z9-tn-rGA"/>
+                            <constraint firstItem="Wsf-j6-P5w" firstAttribute="leading" secondItem="kpK-gI-RfS" secondAttribute="leading" id="1wB-LR-5jL"/>
+                            <constraint firstItem="kpK-gI-RfS" firstAttribute="width" secondItem="2E4-oT-wrq" secondAttribute="width" id="3dY-yP-y7P"/>
+                            <constraint firstItem="47y-MN-ZuI" firstAttribute="top" secondItem="2E4-oT-wrq" secondAttribute="top" id="6eE-1I-pbk"/>
+                            <constraint firstItem="47y-MN-ZuI" firstAttribute="leading" secondItem="gWQ-W5-zBI" secondAttribute="leading" id="6zn-9B-IuV"/>
+                            <constraint firstItem="nQJ-Ng-zrm" firstAttribute="top" secondItem="6xQ-jf-T2b" secondAttribute="bottom" constant="336" id="9VX-md-N7B"/>
+                            <constraint firstItem="5P7-uE-cYk" firstAttribute="top" secondItem="zXB-Sg-uLR" secondAttribute="bottom" id="9qs-LE-fQk"/>
+                            <constraint firstItem="jRr-Vi-Qmd" firstAttribute="top" secondItem="gWQ-W5-zBI" secondAttribute="top" id="E1e-TE-OHJ"/>
+                            <constraint firstItem="jRr-Vi-Qmd" firstAttribute="height" secondItem="5Mr-Au-dJ3" secondAttribute="height" id="EDs-oT-Mfu"/>
+                            <constraint firstItem="AcD-Cg-eCk" firstAttribute="top" secondItem="zXB-Sg-uLR" secondAttribute="bottom" constant="200" id="GC4-sZ-SQf"/>
+                            <constraint firstItem="5P7-uE-cYk" firstAttribute="width" secondItem="6xQ-jf-T2b" secondAttribute="width" id="GGh-bm-AWv"/>
+                            <constraint firstItem="2E4-oT-wrq" firstAttribute="leading" secondItem="jRr-Vi-Qmd" secondAttribute="leading" id="IFF-EC-8Yb"/>
+                            <constraint firstItem="Zjt-MB-4ZT" firstAttribute="height" secondItem="Wsf-j6-P5w" secondAttribute="height" id="KDU-W1-Sjp"/>
+                            <constraint firstItem="6xQ-jf-T2b" firstAttribute="leading" secondItem="Zjt-MB-4ZT" secondAttribute="leading" id="KNa-Kv-HYY"/>
+                            <constraint firstItem="6xQ-jf-T2b" firstAttribute="top" secondItem="5P7-uE-cYk" secondAttribute="top" id="LbX-5o-6TW"/>
+                            <constraint firstItem="Zjt-MB-4ZT" firstAttribute="height" secondItem="2E4-oT-wrq" secondAttribute="height" id="Op6-I0-Bck"/>
+                            <constraint firstItem="gWQ-W5-zBI" firstAttribute="trailing" secondItem="47y-MN-ZuI" secondAttribute="trailing" id="PcU-Na-aqq"/>
+                            <constraint firstItem="Wsf-j6-P5w" firstAttribute="top" secondItem="jRr-Vi-Qmd" secondAttribute="top" id="QEm-kd-K94"/>
+                            <constraint firstItem="kpK-gI-RfS" firstAttribute="trailing" secondItem="Zjt-MB-4ZT" secondAttribute="trailing" id="Rnf-3r-6Bc"/>
+                            <constraint firstItem="jRr-Vi-Qmd" firstAttribute="height" secondItem="2E4-oT-wrq" secondAttribute="height" id="VLj-49-jkN"/>
+                            <constraint firstItem="Zjt-MB-4ZT" firstAttribute="height" secondItem="kpK-gI-RfS" secondAttribute="height" id="Vax-5o-L2k"/>
+                            <constraint firstItem="Zjt-MB-4ZT" firstAttribute="width" secondItem="AcD-Cg-eCk" secondAttribute="width" id="WyE-sB-tYn"/>
+                            <constraint firstItem="Zjt-MB-4ZT" firstAttribute="top" secondItem="zXB-Sg-uLR" secondAttribute="bottom" constant="200" id="YIk-Fp-5tz"/>
+                            <constraint firstItem="6xQ-jf-T2b" firstAttribute="top" secondItem="zXB-Sg-uLR" secondAttribute="bottom" id="Yt7-dC-ybp"/>
+                            <constraint firstItem="kpK-gI-RfS" firstAttribute="trailing" secondItem="Wsf-j6-P5w" secondAttribute="trailing" id="d1f-ah-gu0"/>
+                            <constraint firstItem="5Mr-Au-dJ3" firstAttribute="leading" secondItem="2E4-oT-wrq" secondAttribute="leading" id="dQs-N4-gba"/>
+                            <constraint firstItem="Zjt-MB-4ZT" firstAttribute="width" secondItem="gWQ-W5-zBI" secondAttribute="width" id="e2C-Wl-0Zl"/>
+                            <constraint firstItem="AcD-Cg-eCk" firstAttribute="trailing" secondItem="5P7-uE-cYk" secondAttribute="trailing" id="gMZ-Td-LZD"/>
+                            <constraint firstItem="5P7-uE-cYk" firstAttribute="height" secondItem="6xQ-jf-T2b" secondAttribute="height" id="gnK-Qr-rqP"/>
+                            <constraint firstItem="47y-MN-ZuI" firstAttribute="height" secondItem="AcD-Cg-eCk" secondAttribute="height" id="hbz-DQ-E9w"/>
+                            <constraint firstItem="kpK-gI-RfS" firstAttribute="leading" secondItem="Wgs-Ak-aza" secondAttribute="leading" id="hsh-12-TRC"/>
+                            <constraint firstItem="jRr-Vi-Qmd" firstAttribute="width" secondItem="Wsf-j6-P5w" secondAttribute="width" id="huJ-fc-xW5"/>
+                            <constraint firstItem="5Mr-Au-dJ3" firstAttribute="trailing" secondItem="2E4-oT-wrq" secondAttribute="trailing" id="jOB-kr-4sS"/>
+                            <constraint firstItem="Wsf-j6-P5w" firstAttribute="top" secondItem="kpK-gI-RfS" secondAttribute="bottom" id="kWO-7J-mef"/>
+                            <constraint firstItem="jRr-Vi-Qmd" firstAttribute="trailing" secondItem="2E4-oT-wrq" secondAttribute="trailing" id="liI-Ai-efY"/>
+                            <constraint firstItem="AcD-Cg-eCk" firstAttribute="leading" secondItem="5Mr-Au-dJ3" secondAttribute="trailing" id="luM-9e-qGB"/>
+                            <constraint firstItem="Zjt-MB-4ZT" firstAttribute="top" secondItem="6xQ-jf-T2b" secondAttribute="bottom" id="mln-O9-iYM"/>
+                            <constraint firstItem="Zjt-MB-4ZT" firstAttribute="top" secondItem="5Mr-Au-dJ3" secondAttribute="top" id="nMV-tT-cET"/>
+                            <constraint firstItem="Zjt-MB-4ZT" firstAttribute="width" secondItem="5Mr-Au-dJ3" secondAttribute="width" id="nba-Me-NFT"/>
+                            <constraint firstItem="Zjt-MB-4ZT" firstAttribute="width" secondItem="2E4-oT-wrq" secondAttribute="width" id="oGa-04-eon"/>
+                            <constraint firstItem="AcD-Cg-eCk" firstAttribute="top" secondItem="5Mr-Au-dJ3" secondAttribute="top" id="oIm-nP-TuZ"/>
+                            <constraint firstItem="Zjt-MB-4ZT" firstAttribute="height" secondItem="gWQ-W5-zBI" secondAttribute="height" id="ovz-qM-whj"/>
+                            <constraint firstItem="nQJ-Ng-zrm" firstAttribute="top" secondItem="Wsf-j6-P5w" secondAttribute="bottom" constant="36" id="pzK-sJ-AJu"/>
+                            <constraint firstItem="47y-MN-ZuI" firstAttribute="height" secondItem="gWQ-W5-zBI" secondAttribute="height" id="qWe-Tk-STN"/>
+                            <constraint firstItem="jRr-Vi-Qmd" firstAttribute="width" secondItem="gWQ-W5-zBI" secondAttribute="width" id="rUw-hX-Q8B"/>
+                            <constraint firstItem="2E4-oT-wrq" firstAttribute="top" secondItem="kpK-gI-RfS" secondAttribute="top" id="rVd-if-2Ja"/>
+                            <constraint firstItem="kpK-gI-RfS" firstAttribute="top" secondItem="Zjt-MB-4ZT" secondAttribute="bottom" id="sK7-7W-qUh"/>
+                            <constraint firstItem="kpK-gI-RfS" firstAttribute="width" secondItem="47y-MN-ZuI" secondAttribute="width" id="sNy-kp-KGL"/>
+                            <constraint firstItem="AcD-Cg-eCk" firstAttribute="leading" secondItem="47y-MN-ZuI" secondAttribute="leading" id="tJQ-Qh-8qQ"/>
+                            <constraint firstAttribute="trailing" secondItem="gWQ-W5-zBI" secondAttribute="trailing" id="tZ8-wv-hPb"/>
+                            <constraint firstItem="nQJ-Ng-zrm" firstAttribute="top" secondItem="5P7-uE-cYk" secondAttribute="bottom" constant="336" id="vgU-0i-vSa"/>
+                            <constraint firstItem="5P7-uE-cYk" firstAttribute="leading" secondItem="6xQ-jf-T2b" secondAttribute="trailing" id="wfs-Rw-xrv"/>
+                            <constraint firstItem="47y-MN-ZuI" firstAttribute="trailing" secondItem="AcD-Cg-eCk" secondAttribute="trailing" id="yhV-wK-qh2"/>
+                            <constraint firstItem="Zjt-MB-4ZT" firstAttribute="leading" secondItem="kpK-gI-RfS" secondAttribute="leading" id="z7B-eh-2eD"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="HjV-L5-HM8"/>
+                    <keyCommands/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="faP-1b-WOM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4554" y="-415"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -1047,7 +1192,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2mh-KV-08M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="9336" y="-357"/>
+            <point key="canvasLocation" x="11066" y="-357"/>
         </scene>
         <!--Submit Work Order-->
         <scene sceneID="8EZ-yQ-KOh">
@@ -1091,7 +1236,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R6a-xG-Bgm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="10057.5" y="-346"/>
+            <point key="canvasLocation" x="11787" y="-346"/>
         </scene>
         <!--WriteA Review-->
         <scene sceneID="GYW-pD-TmS">
@@ -1135,7 +1280,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="95x-Xs-ZNS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="10759.5" y="-395"/>
+            <point key="canvasLocation" x="12489" y="-395"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="UMf-op-a8X">
@@ -1769,10 +1914,39 @@
             </objects>
             <point key="canvasLocation" x="2809.5" y="321"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="iFd-ir-NQ0">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fAI-Nf-DO3" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="wa6-V3-h8k">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="5YJ-bM-EXx" kind="relationship" relationship="rootViewController" id="zgS-oK-J28"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RB2-8b-SJl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3742" y="-415"/>
+        </scene>
     </scenes>
     <resources>
         <image name="App_Dining.png" width="640" height="1045"/>
         <image name="App_Home_Screen.png" width="640" height="1046"/>
         <image name="App_MyIllini.png" width="640" height="1046"/>
+        <image name="Call Us Slice.png" width="215" height="220"/>
+        <image name="Dining Slice.png" width="320" height="304"/>
+        <image name="Email Us Slice.png" width="212" height="220"/>
+        <image name="Events Slice.png" width="212" height="219"/>
+        <image name="Facebook Slice.png" width="212" height="218"/>
+        <image name="Instagram Slice.png" width="214" height="218"/>
+        <image name="My Illini Tower Slice.png" width="320" height="304"/>
+        <image name="Pay your rent slice.png" width="212" height="219"/>
+        <image name="Suggestions Slice.png" width="212" height="218"/>
+        <image name="Twitter Slice.png" width="213" height="218"/>
+        <image name="What's Near By Slice.png" width="212" height="220"/>
     </resources>
 </document>

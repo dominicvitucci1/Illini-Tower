@@ -46,6 +46,17 @@
 		B6D3B6F51A029D8400563FE8 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6D3B6F41A029D8400563FE8 /* Security.framework */; };
 		B6D3B6F71A029D8C00563FE8 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6D3B6F61A029D8C00563FE8 /* StoreKit.framework */; };
 		B6D3B6F91A029D9D00563FE8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6D3B6F81A029D9D00563FE8 /* SystemConfiguration.framework */; };
+		B6D8B10E1A3E3B1100A849F7 /* Call Us Slice.png in Resources */ = {isa = PBXBuildFile; fileRef = B6D8B1031A3E3B1100A849F7 /* Call Us Slice.png */; };
+		B6D8B10F1A3E3B1100A849F7 /* Dining Slice.png in Resources */ = {isa = PBXBuildFile; fileRef = B6D8B1041A3E3B1100A849F7 /* Dining Slice.png */; };
+		B6D8B1101A3E3B1100A849F7 /* Email Us Slice.png in Resources */ = {isa = PBXBuildFile; fileRef = B6D8B1051A3E3B1100A849F7 /* Email Us Slice.png */; };
+		B6D8B1111A3E3B1100A849F7 /* Events Slice.png in Resources */ = {isa = PBXBuildFile; fileRef = B6D8B1061A3E3B1100A849F7 /* Events Slice.png */; };
+		B6D8B1121A3E3B1100A849F7 /* Facebook Slice.png in Resources */ = {isa = PBXBuildFile; fileRef = B6D8B1071A3E3B1100A849F7 /* Facebook Slice.png */; };
+		B6D8B1131A3E3B1100A849F7 /* Instagram Slice.png in Resources */ = {isa = PBXBuildFile; fileRef = B6D8B1081A3E3B1100A849F7 /* Instagram Slice.png */; };
+		B6D8B1141A3E3B1100A849F7 /* My Illini Tower Slice.png in Resources */ = {isa = PBXBuildFile; fileRef = B6D8B1091A3E3B1100A849F7 /* My Illini Tower Slice.png */; };
+		B6D8B1151A3E3B1100A849F7 /* Pay your rent slice.png in Resources */ = {isa = PBXBuildFile; fileRef = B6D8B10A1A3E3B1100A849F7 /* Pay your rent slice.png */; };
+		B6D8B1161A3E3B1100A849F7 /* Suggestions Slice.png in Resources */ = {isa = PBXBuildFile; fileRef = B6D8B10B1A3E3B1100A849F7 /* Suggestions Slice.png */; };
+		B6D8B1171A3E3B1100A849F7 /* Twitter Slice.png in Resources */ = {isa = PBXBuildFile; fileRef = B6D8B10C1A3E3B1100A849F7 /* Twitter Slice.png */; };
+		B6D8B1181A3E3B1100A849F7 /* What's Near By Slice.png in Resources */ = {isa = PBXBuildFile; fileRef = B6D8B10D1A3E3B1100A849F7 /* What's Near By Slice.png */; };
 		B6DB30611A02C95D00DC7F8D /* latePlateRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DB30601A02C95D00DC7F8D /* latePlateRequest.swift */; };
 		B6DB30631A02F1F500DC7F8D /* foodNomination.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DB30621A02F1F500DC7F8D /* foodNomination.swift */; };
 /* End PBXBuildFile section */
@@ -95,6 +106,17 @@
 		B6D3B6F61A029D8C00563FE8 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		B6D3B6F81A029D9D00563FE8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		B6D3B6FA1A029E1600563FE8 /* Illini Tower 2.0-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Illini Tower 2.0-Bridging-Header.h"; sourceTree = "<group>"; };
+		B6D8B1031A3E3B1100A849F7 /* Call Us Slice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Call Us Slice.png"; path = "../../../Desktop/IT App Slices/Call Us Slice.png"; sourceTree = "<group>"; };
+		B6D8B1041A3E3B1100A849F7 /* Dining Slice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Dining Slice.png"; path = "../../../Desktop/IT App Slices/Dining Slice.png"; sourceTree = "<group>"; };
+		B6D8B1051A3E3B1100A849F7 /* Email Us Slice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Email Us Slice.png"; path = "../../../Desktop/IT App Slices/Email Us Slice.png"; sourceTree = "<group>"; };
+		B6D8B1061A3E3B1100A849F7 /* Events Slice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Events Slice.png"; path = "../../../Desktop/IT App Slices/Events Slice.png"; sourceTree = "<group>"; };
+		B6D8B1071A3E3B1100A849F7 /* Facebook Slice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Facebook Slice.png"; path = "../../../Desktop/IT App Slices/Facebook Slice.png"; sourceTree = "<group>"; };
+		B6D8B1081A3E3B1100A849F7 /* Instagram Slice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Instagram Slice.png"; path = "../../../Desktop/IT App Slices/Instagram Slice.png"; sourceTree = "<group>"; };
+		B6D8B1091A3E3B1100A849F7 /* My Illini Tower Slice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "My Illini Tower Slice.png"; path = "../../../Desktop/IT App Slices/My Illini Tower Slice.png"; sourceTree = "<group>"; };
+		B6D8B10A1A3E3B1100A849F7 /* Pay your rent slice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Pay your rent slice.png"; path = "../../../Desktop/IT App Slices/Pay your rent slice.png"; sourceTree = "<group>"; };
+		B6D8B10B1A3E3B1100A849F7 /* Suggestions Slice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Suggestions Slice.png"; path = "../../../Desktop/IT App Slices/Suggestions Slice.png"; sourceTree = "<group>"; };
+		B6D8B10C1A3E3B1100A849F7 /* Twitter Slice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Twitter Slice.png"; path = "../../../Desktop/IT App Slices/Twitter Slice.png"; sourceTree = "<group>"; };
+		B6D8B10D1A3E3B1100A849F7 /* What's Near By Slice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "What's Near By Slice.png"; path = "../../../Desktop/IT App Slices/What's Near By Slice.png"; sourceTree = "<group>"; };
 		B6DB30601A02C95D00DC7F8D /* latePlateRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = latePlateRequest.swift; sourceTree = "<group>"; };
 		B6DB30621A02F1F500DC7F8D /* foodNomination.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = foodNomination.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -194,6 +216,17 @@
 		B6D3B6971A001BD300563FE8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B6D8B1031A3E3B1100A849F7 /* Call Us Slice.png */,
+				B6D8B1041A3E3B1100A849F7 /* Dining Slice.png */,
+				B6D8B1051A3E3B1100A849F7 /* Email Us Slice.png */,
+				B6D8B1061A3E3B1100A849F7 /* Events Slice.png */,
+				B6D8B1071A3E3B1100A849F7 /* Facebook Slice.png */,
+				B6D8B1081A3E3B1100A849F7 /* Instagram Slice.png */,
+				B6D8B1091A3E3B1100A849F7 /* My Illini Tower Slice.png */,
+				B6D8B10A1A3E3B1100A849F7 /* Pay your rent slice.png */,
+				B6D8B10B1A3E3B1100A849F7 /* Suggestions Slice.png */,
+				B6D8B10C1A3E3B1100A849F7 /* Twitter Slice.png */,
+				B6D8B10D1A3E3B1100A849F7 /* What's Near By Slice.png */,
 				B621A3541A31702300A3F825 /* App_Dining.png */,
 				B621A3551A31702300A3F825 /* App_Home_Screen.png */,
 				B621A3561A31702300A3F825 /* App_MyIllini.png */,
@@ -304,14 +337,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				B621A3591A31702300A3F825 /* App_MyIllini.png in Resources */,
+				B6D8B1121A3E3B1100A849F7 /* Facebook Slice.png in Resources */,
 				B621A3501A313CCB00A3F825 /* Top Bar Slice 88.png in Resources */,
 				B6A670611A0AC0E400845008 /* contact_your_ra.html in Resources */,
+				B6D8B1101A3E3B1100A849F7 /* Email Us Slice.png in Resources */,
 				B6D3B6A21A001BD300563FE8 /* Main.storyboard in Resources */,
+				B6D8B1181A3E3B1100A849F7 /* What's Near By Slice.png in Resources */,
+				B6D8B10F1A3E3B1100A849F7 /* Dining Slice.png in Resources */,
+				B6D8B1171A3E3B1100A849F7 /* Twitter Slice.png in Resources */,
+				B6D8B1111A3E3B1100A849F7 /* Events Slice.png in Resources */,
 				B6D3B6A71A001BD300563FE8 /* LaunchScreen.xib in Resources */,
 				B621A3581A31702300A3F825 /* App_Home_Screen.png in Resources */,
+				B6D8B1141A3E3B1100A849F7 /* My Illini Tower Slice.png in Resources */,
+				B6D8B1161A3E3B1100A849F7 /* Suggestions Slice.png in Resources */,
 				B6D3B6A41A001BD300563FE8 /* Images.xcassets in Resources */,
 				B621A3571A31702300A3F825 /* App_Dining.png in Resources */,
+				B6D8B1131A3E3B1100A849F7 /* Instagram Slice.png in Resources */,
 				B621A34F1A313CCB00A3F825 /* Top Bar Slice 44.png in Resources */,
+				B6D8B10E1A3E3B1100A849F7 /* Call Us Slice.png in Resources */,
+				B6D8B1151A3E3B1100A849F7 /* Pay your rent slice.png in Resources */,
 				B621A3511A313CCB00A3F825 /* Top Bar Slice 132.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
