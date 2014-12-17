@@ -17,6 +17,8 @@ class ViewController: UIViewController, UIAlertViewDelegate {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        navigationItem.titleView = UIImageView(image: UIImage(named: "Top Bar Test"))
+        
         
         
     }

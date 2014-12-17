@@ -9,7 +9,7 @@
 import UIKit
 import MapKit
 
-class whatsNearBy: UIViewController {
+class whatsNearBy: UIViewController, MKMapViewDelegate {
 
         
         @IBOutlet weak var map: MKMapView!
@@ -17,21 +17,50 @@ class whatsNearBy: UIViewController {
         override func viewDidLoad() {
             super.viewDidLoad()
             
-            var location = CLLocationCoordinate2D(
+            var location1 = CLLocationCoordinate2D(
                 latitude: 40.106485,
                 longitude: -88.232341
             )
             
-            var span = MKCoordinateSpanMake(0.005, 0.005)
-            var region = MKCoordinateRegion(center: location, span: span)
+            var span1 = MKCoordinateSpanMake(0.01, 0.01)
+            var region1 = MKCoordinateRegion(center: location1, span: span1)
             
-            map.setRegion(region, animated: true)
+            map.setRegion(region1, animated: true)
             
-            var annotation = MKPointAnnotation()
-            annotation.setCoordinate(location)
-            annotation.title = "Illini Tower"
-            annotation.subtitle = "Champaign, IL"
+            var annotation1 = MKPointAnnotation()
+            annotation1.setCoordinate(location1)
+            annotation1.title = "Illini Tower"
+            annotation1.subtitle = "Champaign, IL"
             
-            map.addAnnotation(annotation)
+            self.map.addAnnotation(annotation1)
+            
+            
+            var location2 = CLLocationCoordinate2D(
+                latitude: 40.108530,
+                longitude: -88.229258
+            )
+            
+            
+            var annotation2 = MKPointAnnotation()
+            annotation2.setCoordinate(location2)
+            annotation2.title = "Illini Union Bookstore"
+            annotation2.subtitle = "Champaign, IL"
+            
+            self.map.addAnnotation(annotation2)
+            
+            
+            var location3 = CLLocationCoordinate2D(
+                latitude: 40.105945,
+                longitude: -88.227198
+            )
+            
+            
+            var annotation3 = MKPointAnnotation()
+            annotation3.setCoordinate(location3)
+            annotation3.title = "Foellinger Auditorium"
+            annotation3.subtitle = "Champaign, IL"
+            
+            self.map.addAnnotation(annotation3)
+
         }
 }

@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B621A34F1A313CCB00A3F825 /* Top Bar Slice 44.png in Resources */ = {isa = PBXBuildFile; fileRef = B621A34C1A313CCB00A3F825 /* Top Bar Slice 44.png */; };
-		B621A3501A313CCB00A3F825 /* Top Bar Slice 88.png in Resources */ = {isa = PBXBuildFile; fileRef = B621A34D1A313CCB00A3F825 /* Top Bar Slice 88.png */; };
-		B621A3511A313CCB00A3F825 /* Top Bar Slice 132.png in Resources */ = {isa = PBXBuildFile; fileRef = B621A34E1A313CCB00A3F825 /* Top Bar Slice 132.png */; };
-		B621A3571A31702300A3F825 /* App_Dining.png in Resources */ = {isa = PBXBuildFile; fileRef = B621A3541A31702300A3F825 /* App_Dining.png */; };
-		B621A3581A31702300A3F825 /* App_Home_Screen.png in Resources */ = {isa = PBXBuildFile; fileRef = B621A3551A31702300A3F825 /* App_Home_Screen.png */; };
-		B621A3591A31702300A3F825 /* App_MyIllini.png in Resources */ = {isa = PBXBuildFile; fileRef = B621A3561A31702300A3F825 /* App_MyIllini.png */; };
+		B69D16E81A4132F7007755E4 /* My Illini Background.png in Resources */ = {isa = PBXBuildFile; fileRef = B69D16E71A4132F7007755E4 /* My Illini Background.png */; };
+		B69D16ED1A413303007755E4 /* Contact Your RA Slice.png in Resources */ = {isa = PBXBuildFile; fileRef = B69D16E91A413303007755E4 /* Contact Your RA Slice.png */; };
+		B69D16EE1A413303007755E4 /* Refer A Friend Slice.png in Resources */ = {isa = PBXBuildFile; fileRef = B69D16EA1A413303007755E4 /* Refer A Friend Slice.png */; };
+		B69D16EF1A413303007755E4 /* Submit Work Order Slice.png in Resources */ = {isa = PBXBuildFile; fileRef = B69D16EB1A413303007755E4 /* Submit Work Order Slice.png */; };
+		B69D16F01A413303007755E4 /* Write A Review Slice.png in Resources */ = {isa = PBXBuildFile; fileRef = B69D16EC1A413303007755E4 /* Write A Review Slice.png */; };
+		B69D16F21A413FAF007755E4 /* Dining Background.png in Resources */ = {isa = PBXBuildFile; fileRef = B69D16F11A413FAF007755E4 /* Dining Background.png */; };
+		B69D16F61A413FBB007755E4 /* Late Plate Request Slice.png in Resources */ = {isa = PBXBuildFile; fileRef = B69D16F31A413FBB007755E4 /* Late Plate Request Slice.png */; };
+		B69D16F71A413FBB007755E4 /* Skillet Choice Nomination Slice.png in Resources */ = {isa = PBXBuildFile; fileRef = B69D16F41A413FBB007755E4 /* Skillet Choice Nomination Slice.png */; };
+		B69D16F81A413FBB007755E4 /* Today's Menu Slice.png in Resources */ = {isa = PBXBuildFile; fileRef = B69D16F51A413FBB007755E4 /* Today's Menu Slice.png */; };
 		B6A670611A0AC0E400845008 /* contact_your_ra.html in Resources */ = {isa = PBXBuildFile; fileRef = B6A670601A0AC0E400845008 /* contact_your_ra.html */; };
 		B6B0CCF11A06B8BF00AE98A9 /* contactYourRA.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B0CCF01A06B8BF00AE98A9 /* contactYourRA.swift */; };
 		B6D3B69A1A001BD300563FE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D3B6991A001BD300563FE8 /* AppDelegate.swift */; };
@@ -62,12 +65,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B621A34C1A313CCB00A3F825 /* Top Bar Slice 44.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Top Bar Slice 44.png"; sourceTree = "<group>"; };
-		B621A34D1A313CCB00A3F825 /* Top Bar Slice 88.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Top Bar Slice 88.png"; sourceTree = "<group>"; };
-		B621A34E1A313CCB00A3F825 /* Top Bar Slice 132.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Top Bar Slice 132.png"; sourceTree = "<group>"; };
-		B621A3541A31702300A3F825 /* App_Dining.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = App_Dining.png; sourceTree = "<group>"; };
-		B621A3551A31702300A3F825 /* App_Home_Screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = App_Home_Screen.png; sourceTree = "<group>"; };
-		B621A3561A31702300A3F825 /* App_MyIllini.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = App_MyIllini.png; sourceTree = "<group>"; };
+		B69D16E71A4132F7007755E4 /* My Illini Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "My Illini Background.png"; sourceTree = "<group>"; };
+		B69D16E91A413303007755E4 /* Contact Your RA Slice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Contact Your RA Slice.png"; sourceTree = "<group>"; };
+		B69D16EA1A413303007755E4 /* Refer A Friend Slice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Refer A Friend Slice.png"; sourceTree = "<group>"; };
+		B69D16EB1A413303007755E4 /* Submit Work Order Slice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Submit Work Order Slice.png"; sourceTree = "<group>"; };
+		B69D16EC1A413303007755E4 /* Write A Review Slice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Write A Review Slice.png"; sourceTree = "<group>"; };
+		B69D16F11A413FAF007755E4 /* Dining Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Dining Background.png"; sourceTree = "<group>"; };
+		B69D16F31A413FBB007755E4 /* Late Plate Request Slice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Late Plate Request Slice.png"; sourceTree = "<group>"; };
+		B69D16F41A413FBB007755E4 /* Skillet Choice Nomination Slice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Skillet Choice Nomination Slice.png"; sourceTree = "<group>"; };
+		B69D16F51A413FBB007755E4 /* Today's Menu Slice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Today's Menu Slice.png"; sourceTree = "<group>"; };
 		B6A670601A0AC0E400845008 /* contact_your_ra.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = contact_your_ra.html; sourceTree = "<group>"; };
 		B6B0CCF01A06B8BF00AE98A9 /* contactYourRA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = contactYourRA.swift; sourceTree = "<group>"; };
 		B6D3B6941A001BD300563FE8 /* Illini Tower.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Illini Tower.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -106,17 +112,17 @@
 		B6D3B6F61A029D8C00563FE8 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		B6D3B6F81A029D9D00563FE8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		B6D3B6FA1A029E1600563FE8 /* Illini Tower 2.0-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Illini Tower 2.0-Bridging-Header.h"; sourceTree = "<group>"; };
-		B6D8B1031A3E3B1100A849F7 /* Call Us Slice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Call Us Slice.png"; path = "../../../Desktop/IT App Slices/Call Us Slice.png"; sourceTree = "<group>"; };
-		B6D8B1041A3E3B1100A849F7 /* Dining Slice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Dining Slice.png"; path = "../../../Desktop/IT App Slices/Dining Slice.png"; sourceTree = "<group>"; };
-		B6D8B1051A3E3B1100A849F7 /* Email Us Slice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Email Us Slice.png"; path = "../../../Desktop/IT App Slices/Email Us Slice.png"; sourceTree = "<group>"; };
-		B6D8B1061A3E3B1100A849F7 /* Events Slice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Events Slice.png"; path = "../../../Desktop/IT App Slices/Events Slice.png"; sourceTree = "<group>"; };
-		B6D8B1071A3E3B1100A849F7 /* Facebook Slice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Facebook Slice.png"; path = "../../../Desktop/IT App Slices/Facebook Slice.png"; sourceTree = "<group>"; };
-		B6D8B1081A3E3B1100A849F7 /* Instagram Slice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Instagram Slice.png"; path = "../../../Desktop/IT App Slices/Instagram Slice.png"; sourceTree = "<group>"; };
-		B6D8B1091A3E3B1100A849F7 /* My Illini Tower Slice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "My Illini Tower Slice.png"; path = "../../../Desktop/IT App Slices/My Illini Tower Slice.png"; sourceTree = "<group>"; };
-		B6D8B10A1A3E3B1100A849F7 /* Pay your rent slice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Pay your rent slice.png"; path = "../../../Desktop/IT App Slices/Pay your rent slice.png"; sourceTree = "<group>"; };
-		B6D8B10B1A3E3B1100A849F7 /* Suggestions Slice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Suggestions Slice.png"; path = "../../../Desktop/IT App Slices/Suggestions Slice.png"; sourceTree = "<group>"; };
-		B6D8B10C1A3E3B1100A849F7 /* Twitter Slice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Twitter Slice.png"; path = "../../../Desktop/IT App Slices/Twitter Slice.png"; sourceTree = "<group>"; };
-		B6D8B10D1A3E3B1100A849F7 /* What's Near By Slice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "What's Near By Slice.png"; path = "../../../Desktop/IT App Slices/What's Near By Slice.png"; sourceTree = "<group>"; };
+		B6D8B1031A3E3B1100A849F7 /* Call Us Slice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Call Us Slice.png"; path = "../../../Desktop/IT App Slices/Home Screen App Slices/Call Us Slice.png"; sourceTree = "<group>"; };
+		B6D8B1041A3E3B1100A849F7 /* Dining Slice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Dining Slice.png"; path = "../../../Desktop/IT App Slices/Home Screen App Slices/Dining Slice.png"; sourceTree = "<group>"; };
+		B6D8B1051A3E3B1100A849F7 /* Email Us Slice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Email Us Slice.png"; path = "../../../Desktop/IT App Slices/Home Screen App Slices/Email Us Slice.png"; sourceTree = "<group>"; };
+		B6D8B1061A3E3B1100A849F7 /* Events Slice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Events Slice.png"; path = "../../../Desktop/IT App Slices/Home Screen App Slices/Events Slice.png"; sourceTree = "<group>"; };
+		B6D8B1071A3E3B1100A849F7 /* Facebook Slice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Facebook Slice.png"; path = "../../../Desktop/IT App Slices/Home Screen App Slices/Facebook Slice.png"; sourceTree = "<group>"; };
+		B6D8B1081A3E3B1100A849F7 /* Instagram Slice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Instagram Slice.png"; path = "../../../Desktop/IT App Slices/Home Screen App Slices/Instagram Slice.png"; sourceTree = "<group>"; };
+		B6D8B1091A3E3B1100A849F7 /* My Illini Tower Slice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "My Illini Tower Slice.png"; path = "../../../Desktop/IT App Slices/Home Screen App Slices/My Illini Tower Slice.png"; sourceTree = "<group>"; };
+		B6D8B10A1A3E3B1100A849F7 /* Pay your rent slice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Pay your rent slice.png"; path = "../../../Desktop/IT App Slices/Home Screen App Slices/Pay your rent slice.png"; sourceTree = "<group>"; };
+		B6D8B10B1A3E3B1100A849F7 /* Suggestions Slice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Suggestions Slice.png"; path = "../../../Desktop/IT App Slices/Home Screen App Slices/Suggestions Slice.png"; sourceTree = "<group>"; };
+		B6D8B10C1A3E3B1100A849F7 /* Twitter Slice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Twitter Slice.png"; path = "../../../Desktop/IT App Slices/Home Screen App Slices/Twitter Slice.png"; sourceTree = "<group>"; };
+		B6D8B10D1A3E3B1100A849F7 /* What's Near By Slice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "What's Near By Slice.png"; path = "../../../Desktop/IT App Slices/Home Screen App Slices/What's Near By Slice.png"; sourceTree = "<group>"; };
 		B6DB30601A02C95D00DC7F8D /* latePlateRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = latePlateRequest.swift; sourceTree = "<group>"; };
 		B6DB30621A02F1F500DC7F8D /* foodNomination.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = foodNomination.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -216,6 +222,15 @@
 		B6D3B6971A001BD300563FE8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B69D16F31A413FBB007755E4 /* Late Plate Request Slice.png */,
+				B69D16F41A413FBB007755E4 /* Skillet Choice Nomination Slice.png */,
+				B69D16F51A413FBB007755E4 /* Today's Menu Slice.png */,
+				B69D16F11A413FAF007755E4 /* Dining Background.png */,
+				B69D16E91A413303007755E4 /* Contact Your RA Slice.png */,
+				B69D16EA1A413303007755E4 /* Refer A Friend Slice.png */,
+				B69D16EB1A413303007755E4 /* Submit Work Order Slice.png */,
+				B69D16EC1A413303007755E4 /* Write A Review Slice.png */,
+				B69D16E71A4132F7007755E4 /* My Illini Background.png */,
 				B6D8B1031A3E3B1100A849F7 /* Call Us Slice.png */,
 				B6D8B1041A3E3B1100A849F7 /* Dining Slice.png */,
 				B6D8B1051A3E3B1100A849F7 /* Email Us Slice.png */,
@@ -227,12 +242,6 @@
 				B6D8B10B1A3E3B1100A849F7 /* Suggestions Slice.png */,
 				B6D8B10C1A3E3B1100A849F7 /* Twitter Slice.png */,
 				B6D8B10D1A3E3B1100A849F7 /* What's Near By Slice.png */,
-				B621A3541A31702300A3F825 /* App_Dining.png */,
-				B621A3551A31702300A3F825 /* App_Home_Screen.png */,
-				B621A3561A31702300A3F825 /* App_MyIllini.png */,
-				B621A34C1A313CCB00A3F825 /* Top Bar Slice 44.png */,
-				B621A34D1A313CCB00A3F825 /* Top Bar Slice 88.png */,
-				B621A34E1A313CCB00A3F825 /* Top Bar Slice 132.png */,
 				B6D3B6981A001BD300563FE8 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -336,27 +345,30 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B621A3591A31702300A3F825 /* App_MyIllini.png in Resources */,
 				B6D8B1121A3E3B1100A849F7 /* Facebook Slice.png in Resources */,
-				B621A3501A313CCB00A3F825 /* Top Bar Slice 88.png in Resources */,
 				B6A670611A0AC0E400845008 /* contact_your_ra.html in Resources */,
 				B6D8B1101A3E3B1100A849F7 /* Email Us Slice.png in Resources */,
+				B69D16EE1A413303007755E4 /* Refer A Friend Slice.png in Resources */,
 				B6D3B6A21A001BD300563FE8 /* Main.storyboard in Resources */,
 				B6D8B1181A3E3B1100A849F7 /* What's Near By Slice.png in Resources */,
+				B69D16ED1A413303007755E4 /* Contact Your RA Slice.png in Resources */,
 				B6D8B10F1A3E3B1100A849F7 /* Dining Slice.png in Resources */,
+				B69D16F21A413FAF007755E4 /* Dining Background.png in Resources */,
+				B69D16F61A413FBB007755E4 /* Late Plate Request Slice.png in Resources */,
 				B6D8B1171A3E3B1100A849F7 /* Twitter Slice.png in Resources */,
 				B6D8B1111A3E3B1100A849F7 /* Events Slice.png in Resources */,
 				B6D3B6A71A001BD300563FE8 /* LaunchScreen.xib in Resources */,
-				B621A3581A31702300A3F825 /* App_Home_Screen.png in Resources */,
+				B69D16E81A4132F7007755E4 /* My Illini Background.png in Resources */,
 				B6D8B1141A3E3B1100A849F7 /* My Illini Tower Slice.png in Resources */,
 				B6D8B1161A3E3B1100A849F7 /* Suggestions Slice.png in Resources */,
 				B6D3B6A41A001BD300563FE8 /* Images.xcassets in Resources */,
-				B621A3571A31702300A3F825 /* App_Dining.png in Resources */,
 				B6D8B1131A3E3B1100A849F7 /* Instagram Slice.png in Resources */,
-				B621A34F1A313CCB00A3F825 /* Top Bar Slice 44.png in Resources */,
 				B6D8B10E1A3E3B1100A849F7 /* Call Us Slice.png in Resources */,
 				B6D8B1151A3E3B1100A849F7 /* Pay your rent slice.png in Resources */,
-				B621A3511A313CCB00A3F825 /* Top Bar Slice 132.png in Resources */,
+				B69D16F81A413FBB007755E4 /* Today's Menu Slice.png in Resources */,
+				B69D16EF1A413303007755E4 /* Submit Work Order Slice.png in Resources */,
+				B69D16F01A413303007755E4 /* Write A Review Slice.png in Resources */,
+				B69D16F71A413FBB007755E4 /* Skillet Choice Nomination Slice.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

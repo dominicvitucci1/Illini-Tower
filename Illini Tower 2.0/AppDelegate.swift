@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         
         
-        UINavigationBar.appearance().setBackgroundImage(UIImage(named: "Top Bar Test"), forBarMetrics: UIBarMetrics.Default)
+        //UINavigationBar.appearance().setBackgroundImage(UIImage(named: "Top Bar Test"), forBarMetrics: UIBarMetrics.Default)
                 
         
         //Parse.com Setup
