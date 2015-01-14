@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B69D16E81A4132F7007755E4 /* My Illini Background.png in Resources */ = {isa = PBXBuildFile; fileRef = B69D16E71A4132F7007755E4 /* My Illini Background.png */; };
 		B69D16ED1A413303007755E4 /* Contact Your RA Slice.png in Resources */ = {isa = PBXBuildFile; fileRef = B69D16E91A413303007755E4 /* Contact Your RA Slice.png */; };
 		B69D16EE1A413303007755E4 /* Refer A Friend Slice.png in Resources */ = {isa = PBXBuildFile; fileRef = B69D16EA1A413303007755E4 /* Refer A Friend Slice.png */; };
 		B69D16EF1A413303007755E4 /* Submit Work Order Slice.png in Resources */ = {isa = PBXBuildFile; fileRef = B69D16EB1A413303007755E4 /* Submit Work Order Slice.png */; };
@@ -16,7 +15,7 @@
 		B69D16F61A413FBB007755E4 /* Late Plate Request Slice.png in Resources */ = {isa = PBXBuildFile; fileRef = B69D16F31A413FBB007755E4 /* Late Plate Request Slice.png */; };
 		B69D16F71A413FBB007755E4 /* Skillet Choice Nomination Slice.png in Resources */ = {isa = PBXBuildFile; fileRef = B69D16F41A413FBB007755E4 /* Skillet Choice Nomination Slice.png */; };
 		B69D16F81A413FBB007755E4 /* Today's Menu Slice.png in Resources */ = {isa = PBXBuildFile; fileRef = B69D16F51A413FBB007755E4 /* Today's Menu Slice.png */; };
-		B6A670611A0AC0E400845008 /* contact_your_ra.html in Resources */ = {isa = PBXBuildFile; fileRef = B6A670601A0AC0E400845008 /* contact_your_ra.html */; };
+		B69D16FC1A435E75007755E4 /* My Illini Background.png in Resources */ = {isa = PBXBuildFile; fileRef = B69D16FB1A435E75007755E4 /* My Illini Background.png */; };
 		B6B0CCF11A06B8BF00AE98A9 /* contactYourRA.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B0CCF01A06B8BF00AE98A9 /* contactYourRA.swift */; };
 		B6D3B69A1A001BD300563FE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D3B6991A001BD300563FE8 /* AppDelegate.swift */; };
 		B6D3B69D1A001BD300563FE8 /* Illini_Tower_2_0.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B6D3B69B1A001BD300563FE8 /* Illini_Tower_2_0.xcdatamodeld */; };
@@ -65,7 +64,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B69D16E71A4132F7007755E4 /* My Illini Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "My Illini Background.png"; sourceTree = "<group>"; };
 		B69D16E91A413303007755E4 /* Contact Your RA Slice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Contact Your RA Slice.png"; sourceTree = "<group>"; };
 		B69D16EA1A413303007755E4 /* Refer A Friend Slice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Refer A Friend Slice.png"; sourceTree = "<group>"; };
 		B69D16EB1A413303007755E4 /* Submit Work Order Slice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Submit Work Order Slice.png"; sourceTree = "<group>"; };
@@ -74,7 +72,7 @@
 		B69D16F31A413FBB007755E4 /* Late Plate Request Slice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Late Plate Request Slice.png"; sourceTree = "<group>"; };
 		B69D16F41A413FBB007755E4 /* Skillet Choice Nomination Slice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Skillet Choice Nomination Slice.png"; sourceTree = "<group>"; };
 		B69D16F51A413FBB007755E4 /* Today's Menu Slice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Today's Menu Slice.png"; sourceTree = "<group>"; };
-		B6A670601A0AC0E400845008 /* contact_your_ra.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = contact_your_ra.html; sourceTree = "<group>"; };
+		B69D16FB1A435E75007755E4 /* My Illini Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "My Illini Background.png"; sourceTree = "<group>"; };
 		B6B0CCF01A06B8BF00AE98A9 /* contactYourRA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = contactYourRA.swift; sourceTree = "<group>"; };
 		B6D3B6941A001BD300563FE8 /* Illini Tower.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Illini Tower.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6D3B6981A001BD300563FE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -160,7 +158,6 @@
 		B6D3B68B1A001BD300563FE8 = {
 			isa = PBXGroup;
 			children = (
-				B6A670601A0AC0E400845008 /* contact_your_ra.html */,
 				B6D3B6F81A029D9D00563FE8 /* SystemConfiguration.framework */,
 				B6D3B6F61A029D8C00563FE8 /* StoreKit.framework */,
 				B6D3B6F41A029D8400563FE8 /* Security.framework */,
@@ -222,6 +219,7 @@
 		B6D3B6971A001BD300563FE8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B69D16FB1A435E75007755E4 /* My Illini Background.png */,
 				B69D16F31A413FBB007755E4 /* Late Plate Request Slice.png */,
 				B69D16F41A413FBB007755E4 /* Skillet Choice Nomination Slice.png */,
 				B69D16F51A413FBB007755E4 /* Today's Menu Slice.png */,
@@ -230,7 +228,6 @@
 				B69D16EA1A413303007755E4 /* Refer A Friend Slice.png */,
 				B69D16EB1A413303007755E4 /* Submit Work Order Slice.png */,
 				B69D16EC1A413303007755E4 /* Write A Review Slice.png */,
-				B69D16E71A4132F7007755E4 /* My Illini Background.png */,
 				B6D8B1031A3E3B1100A849F7 /* Call Us Slice.png */,
 				B6D8B1041A3E3B1100A849F7 /* Dining Slice.png */,
 				B6D8B1051A3E3B1100A849F7 /* Email Us Slice.png */,
@@ -346,7 +343,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6D8B1121A3E3B1100A849F7 /* Facebook Slice.png in Resources */,
-				B6A670611A0AC0E400845008 /* contact_your_ra.html in Resources */,
 				B6D8B1101A3E3B1100A849F7 /* Email Us Slice.png in Resources */,
 				B69D16EE1A413303007755E4 /* Refer A Friend Slice.png in Resources */,
 				B6D3B6A21A001BD300563FE8 /* Main.storyboard in Resources */,
@@ -355,10 +351,10 @@
 				B6D8B10F1A3E3B1100A849F7 /* Dining Slice.png in Resources */,
 				B69D16F21A413FAF007755E4 /* Dining Background.png in Resources */,
 				B69D16F61A413FBB007755E4 /* Late Plate Request Slice.png in Resources */,
+				B69D16FC1A435E75007755E4 /* My Illini Background.png in Resources */,
 				B6D8B1171A3E3B1100A849F7 /* Twitter Slice.png in Resources */,
 				B6D8B1111A3E3B1100A849F7 /* Events Slice.png in Resources */,
 				B6D3B6A71A001BD300563FE8 /* LaunchScreen.xib in Resources */,
-				B69D16E81A4132F7007755E4 /* My Illini Background.png in Resources */,
 				B6D8B1141A3E3B1100A849F7 /* My Illini Tower Slice.png in Resources */,
 				B6D8B1161A3E3B1100A849F7 /* Suggestions Slice.png in Resources */,
 				B6D3B6A41A001BD300563FE8 /* Images.xcassets in Resources */,

@@ -24,10 +24,10 @@ class contactYourRA: UIViewController {
     override func loadView() {
 
         super.loadView()
+        
     
 
 
-       loadURL()
 
     }
 
@@ -36,32 +36,26 @@ class contactYourRA: UIViewController {
     override func viewDidLoad() {
 
         super.viewDidLoad()
-
+        
+        PFConfig.getConfigInBackgroundWithBlock
+            {
+                (config: PFConfig!, error: NSError!) -> Void in
+                let contact = config["nonAtomicStratLink"] as String
+                NSLog("Yay! The number is %@!", contact)
+                
+                self.webView.loadHTMLString(contact, baseURL: nil)
+        }
+        
 
 
    }
 
-    override func didReceiveMemoryWarning() {
+     override func didReceiveMemoryWarning() {
 
        super.didReceiveMemoryWarning()
 
    }
 
 
-    func loadURL()
-    {
-
-        
-        var requestURL = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("contact_your_ra", ofType: "html")!)
-
-       let request = NSURLRequest(URL: requestURL!)
-        webView.loadRequest(request)
-
-
-
-   }
-
-
 
 }
-

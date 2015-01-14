@@ -30,7 +30,7 @@ class whatsNearBy: UIViewController, MKMapViewDelegate {
             var annotation1 = MKPointAnnotation()
             annotation1.setCoordinate(location1)
             annotation1.title = "Illini Tower"
-            annotation1.subtitle = "Champaign, IL"
+            annotation1.subtitle = "409 East Chalmers Street, Champaign, IL 61820"
             
             self.map.addAnnotation(annotation1)
             
@@ -44,7 +44,7 @@ class whatsNearBy: UIViewController, MKMapViewDelegate {
             var annotation2 = MKPointAnnotation()
             annotation2.setCoordinate(location2)
             annotation2.title = "Illini Union Bookstore"
-            annotation2.subtitle = "Champaign, IL"
+            annotation2.subtitle = "809 South Wright Street, Champaign, IL 61820"
             
             self.map.addAnnotation(annotation2)
             
@@ -58,9 +58,24 @@ class whatsNearBy: UIViewController, MKMapViewDelegate {
             var annotation3 = MKPointAnnotation()
             annotation3.setCoordinate(location3)
             annotation3.title = "Foellinger Auditorium"
-            annotation3.subtitle = "Champaign, IL"
+            annotation3.subtitle = "709 South Mathews Avenue, Urbana, IL 61801"
             
             self.map.addAnnotation(annotation3)
+            
+            
+            
+            var location4 = CLLocationCoordinate2D(
+                latitude: 40.106867,
+                longitude: -88.233317
+            )
+            
+            
+            var annotation4 = MKPointAnnotation()
+            annotation4.setCoordinate(location4)
+            annotation4.title = "Champaign-Urbana MTD Bus Stop"
+            annotation4.subtitle = "Corner of Fourth Street and Chalmers Street"
+            
+            self.map.addAnnotation(annotation4)
 
         }
 }
