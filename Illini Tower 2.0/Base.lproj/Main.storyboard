@@ -582,73 +582,105 @@
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First &amp; Last Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3fQ-lz-Meh">
-                                <rect key="frame" x="16" y="49" width="568" height="30"/>
+                                <rect key="frame" x="16" y="48" width="568" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Meal (i.e. Breakfast)" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rth-6G-lx5">
-                                <rect key="frame" x="16" y="87" width="568" height="30"/>
+                                <rect key="frame" x="16" y="86" width="568" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Address" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6Tv-ef-icA">
-                                <rect key="frame" x="16" y="125" width="568" height="30"/>
+                                <rect key="frame" x="16" y="124" width="568" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Room Number" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mbE-uG-7Q9">
-                                <rect key="frame" x="16" y="201" width="568" height="30"/>
+                                <rect key="frame" x="16" y="200" width="568" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QQR-TP-62g">
-                                <rect key="frame" x="16" y="163" width="568" height="30"/>
+                                <rect key="frame" x="16" y="162" width="568" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="What would you like to eat?" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aDr-Ny-HuS">
-                                <rect key="frame" x="16" y="239" width="568" height="30"/>
+                                <rect key="frame" x="16" y="238" width="568" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dzi-tX-cjk">
-                                <rect key="frame" x="16" y="287" width="568" height="34"/>
+                                <rect key="frame" x="16" y="380" width="568" height="34"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Request A Plate">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="sendSuggestion:" destination="AnQ-QN-F2O" eventType="touchUpInside" id="rdL-KS-oUc"/>
+                                    <action selector="sendSuggestion:" destination="AnQ-QN-F2O" eventType="touchUpInside" id="qxe-AW-ZuI"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Additional Notes: i.e. Allergies, Condiments" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Be4-eh-d6A">
+                                <rect key="frame" x="16" y="276" width="568" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k2T-hA-qhY" userLabel="Disclaimer">
+                                <rect key="frame" x="16" y="319" width="568" height="53"/>
+                                <string key="text">Requests for lunch must be submitted prior to 9am on the day of request. Requests for dinner must be sumbitted prior to 4:30pm on the day of request</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.094117647058823528" green="0.10980392156862745" blue="0.13725490196078433" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="QQR-TP-62g" firstAttribute="leading" secondItem="mbE-uG-7Q9" secondAttribute="leading" id="Bil-dS-UUY"/>
-                            <constraint firstItem="6Tv-ef-icA" firstAttribute="trailing" secondItem="rth-6G-lx5" secondAttribute="trailing" id="CGo-MP-OdR"/>
-                            <constraint firstItem="6Tv-ef-icA" firstAttribute="leading" secondItem="QQR-TP-62g" secondAttribute="leading" id="IGW-D2-ocd"/>
-                            <constraint firstItem="aDr-Ny-HuS" firstAttribute="top" secondItem="mbE-uG-7Q9" secondAttribute="bottom" constant="8" symbolic="YES" id="JSA-58-PRu"/>
-                            <constraint firstItem="dzi-tX-cjk" firstAttribute="top" secondItem="aDr-Ny-HuS" secondAttribute="bottom" constant="18" id="KfM-pm-QMR"/>
-                            <constraint firstItem="rth-6G-lx5" firstAttribute="top" secondItem="3fQ-lz-Meh" secondAttribute="bottom" constant="8" symbolic="YES" id="Krj-8q-0MM"/>
-                            <constraint firstItem="6Tv-ef-icA" firstAttribute="leading" secondItem="rth-6G-lx5" secondAttribute="leading" id="Lon-OU-dTd"/>
-                            <constraint firstItem="3fQ-lz-Meh" firstAttribute="trailing" secondItem="nSZ-be-9w6" secondAttribute="trailing" id="Mas-dN-CK7"/>
-                            <constraint firstItem="dzi-tX-cjk" firstAttribute="leading" secondItem="aDr-Ny-HuS" secondAttribute="leading" id="NLf-gR-CGj"/>
-                            <constraint firstItem="6Tv-ef-icA" firstAttribute="top" secondItem="rth-6G-lx5" secondAttribute="bottom" constant="8" symbolic="YES" id="OhQ-oD-Xtb"/>
-                            <constraint firstItem="rth-6G-lx5" firstAttribute="trailing" secondItem="3fQ-lz-Meh" secondAttribute="trailing" id="SMU-0F-iua"/>
-                            <constraint firstItem="mbE-uG-7Q9" firstAttribute="leading" secondItem="aDr-Ny-HuS" secondAttribute="leading" id="TAd-3T-2lK"/>
-                            <constraint firstItem="aDr-Ny-HuS" firstAttribute="trailing" secondItem="mbE-uG-7Q9" secondAttribute="trailing" id="Wk5-vv-7wR"/>
-                            <constraint firstItem="3fQ-lz-Meh" firstAttribute="leading" secondItem="0Iu-8Z-lOZ" secondAttribute="leadingMargin" id="Yhr-kO-rvA"/>
-                            <constraint firstItem="mbE-uG-7Q9" firstAttribute="trailing" secondItem="QQR-TP-62g" secondAttribute="trailing" id="afP-jF-fZX"/>
-                            <constraint firstItem="rth-6G-lx5" firstAttribute="trailing" secondItem="0Iu-8Z-lOZ" secondAttribute="trailingMargin" id="dua-dl-0Xn"/>
-                            <constraint firstItem="3fQ-lz-Meh" firstAttribute="leading" secondItem="rth-6G-lx5" secondAttribute="leading" id="eBs-bL-2uN"/>
-                            <constraint firstItem="nSZ-be-9w6" firstAttribute="leading" secondItem="3fQ-lz-Meh" secondAttribute="leading" id="eG1-Zi-10y"/>
-                            <constraint firstItem="nSZ-be-9w6" firstAttribute="top" secondItem="Rgr-PL-oc0" secondAttribute="bottom" constant="8" id="j3V-BT-wQY"/>
-                            <constraint firstItem="3fQ-lz-Meh" firstAttribute="top" secondItem="nSZ-be-9w6" secondAttribute="bottom" constant="8" symbolic="YES" id="rke-HK-TN2"/>
-                            <constraint firstItem="QQR-TP-62g" firstAttribute="top" secondItem="6Tv-ef-icA" secondAttribute="bottom" constant="8" symbolic="YES" id="s3y-Ug-Umh"/>
-                            <constraint firstItem="aDr-Ny-HuS" firstAttribute="trailing" secondItem="dzi-tX-cjk" secondAttribute="trailing" id="sSp-hf-GKN"/>
-                            <constraint firstItem="mbE-uG-7Q9" firstAttribute="top" secondItem="QQR-TP-62g" secondAttribute="bottom" constant="8" symbolic="YES" id="yuf-wG-f7E"/>
-                            <constraint firstItem="6Tv-ef-icA" firstAttribute="trailing" secondItem="QQR-TP-62g" secondAttribute="trailing" id="zFS-Lo-EVZ"/>
+                            <constraint firstItem="nSZ-be-9w6" firstAttribute="top" secondItem="Rgr-PL-oc0" secondAttribute="bottom" constant="8" id="17Z-Yn-ysn"/>
+                            <constraint firstItem="6Tv-ef-icA" firstAttribute="width" secondItem="QQR-TP-62g" secondAttribute="width" id="29U-HI-Yl5"/>
+                            <constraint firstItem="Be4-eh-d6A" firstAttribute="trailing" secondItem="0Iu-8Z-lOZ" secondAttribute="trailingMargin" id="2Ys-80-LIG"/>
+                            <constraint firstItem="6Tv-ef-icA" firstAttribute="height" secondItem="rth-6G-lx5" secondAttribute="height" id="33h-8u-hZq"/>
+                            <constraint firstItem="Be4-eh-d6A" firstAttribute="leading" secondItem="aDr-Ny-HuS" secondAttribute="leading" id="4Uu-Mo-ykQ"/>
+                            <constraint firstItem="3fQ-lz-Meh" firstAttribute="leading" secondItem="rth-6G-lx5" secondAttribute="leading" id="6ha-Hj-jnC"/>
+                            <constraint firstItem="mbE-uG-7Q9" firstAttribute="leading" secondItem="QQR-TP-62g" secondAttribute="leading" id="6nR-wg-Zrh"/>
+                            <constraint firstItem="6Tv-ef-icA" firstAttribute="trailing" secondItem="QQR-TP-62g" secondAttribute="trailing" id="8bo-yI-zqu"/>
+                            <constraint firstItem="6Tv-ef-icA" firstAttribute="height" secondItem="QQR-TP-62g" secondAttribute="height" id="8mm-fZ-fSR"/>
+                            <constraint firstItem="k2T-hA-qhY" firstAttribute="top" secondItem="Be4-eh-d6A" secondAttribute="bottom" constant="13" id="9N4-mg-bnA"/>
+                            <constraint firstItem="QQR-TP-62g" firstAttribute="top" secondItem="6Tv-ef-icA" secondAttribute="bottom" constant="8" symbolic="YES" id="9em-BG-r6K"/>
+                            <constraint firstItem="k2T-hA-qhY" firstAttribute="leading" secondItem="Be4-eh-d6A" secondAttribute="leading" id="BBv-qk-q6K"/>
+                            <constraint firstItem="mbE-uG-7Q9" firstAttribute="leading" secondItem="aDr-Ny-HuS" secondAttribute="leading" id="CsD-Ve-sey"/>
+                            <constraint firstItem="dzi-tX-cjk" firstAttribute="trailing" secondItem="k2T-hA-qhY" secondAttribute="trailing" id="E9E-ku-ySS"/>
+                            <constraint firstItem="Be4-eh-d6A" firstAttribute="trailing" secondItem="k2T-hA-qhY" secondAttribute="trailing" id="EKG-fO-yZH"/>
+                            <constraint firstItem="6Tv-ef-icA" firstAttribute="width" secondItem="aDr-Ny-HuS" secondAttribute="width" id="GlH-Ba-gtC"/>
+                            <constraint firstItem="aDr-Ny-HuS" firstAttribute="trailing" secondItem="mbE-uG-7Q9" secondAttribute="trailing" id="HEH-TG-IPL"/>
+                            <constraint firstItem="aDr-Ny-HuS" firstAttribute="top" secondItem="mbE-uG-7Q9" secondAttribute="bottom" constant="8" symbolic="YES" id="I4G-LE-28i"/>
+                            <constraint firstItem="rth-6G-lx5" firstAttribute="trailing" secondItem="6Tv-ef-icA" secondAttribute="trailing" id="KZN-Sb-ihf"/>
+                            <constraint firstItem="Be4-eh-d6A" firstAttribute="trailing" secondItem="aDr-Ny-HuS" secondAttribute="trailing" id="L4i-3u-9hp"/>
+                            <constraint firstItem="6Tv-ef-icA" firstAttribute="height" secondItem="Be4-eh-d6A" secondAttribute="height" id="MdO-4U-Nvv"/>
+                            <constraint firstItem="3fQ-lz-Meh" firstAttribute="top" secondItem="nSZ-be-9w6" secondAttribute="bottom" constant="7" id="Nn5-ne-Li9"/>
+                            <constraint firstItem="rth-6G-lx5" firstAttribute="trailing" secondItem="3fQ-lz-Meh" secondAttribute="trailing" id="P1u-N7-xyY"/>
+                            <constraint firstItem="6Tv-ef-icA" firstAttribute="height" secondItem="3fQ-lz-Meh" secondAttribute="height" id="RQ2-cH-7tO"/>
+                            <constraint firstItem="k2T-hA-qhY" firstAttribute="leading" secondItem="dzi-tX-cjk" secondAttribute="leading" id="V9M-R4-9Lh"/>
+                            <constraint firstItem="mbE-uG-7Q9" firstAttribute="top" secondItem="QQR-TP-62g" secondAttribute="bottom" constant="8" symbolic="YES" id="VkK-Qx-ynq"/>
+                            <constraint firstItem="QQR-TP-62g" firstAttribute="leading" secondItem="6Tv-ef-icA" secondAttribute="leading" id="WO5-I6-uxA"/>
+                            <constraint firstItem="QQR-TP-62g" firstAttribute="trailing" secondItem="mbE-uG-7Q9" secondAttribute="trailing" id="Xe5-Ss-HUE"/>
+                            <constraint firstItem="6Tv-ef-icA" firstAttribute="top" secondItem="rth-6G-lx5" secondAttribute="bottom" constant="8" symbolic="YES" id="bpi-nY-kvl"/>
+                            <constraint firstItem="6Tv-ef-icA" firstAttribute="height" secondItem="mbE-uG-7Q9" secondAttribute="height" id="clZ-Fs-iBb"/>
+                            <constraint firstItem="3fQ-lz-Meh" firstAttribute="leading" secondItem="nSZ-be-9w6" secondAttribute="leading" id="djl-2X-yP2"/>
+                            <constraint firstItem="6Tv-ef-icA" firstAttribute="width" secondItem="3fQ-lz-Meh" secondAttribute="width" id="eCF-bx-swz"/>
+                            <constraint firstItem="6Tv-ef-icA" firstAttribute="width" secondItem="rth-6G-lx5" secondAttribute="width" id="eHP-zM-nBP"/>
+                            <constraint firstItem="k2T-hA-qhY" firstAttribute="top" secondItem="Be4-eh-d6A" secondAttribute="bottom" constant="13" id="fFg-vC-KOv"/>
+                            <constraint firstItem="k2T-hA-qhY" firstAttribute="leading" secondItem="0Iu-8Z-lOZ" secondAttribute="leadingMargin" id="hAw-QP-pYf"/>
+                            <constraint firstItem="dzi-tX-cjk" firstAttribute="top" secondItem="k2T-hA-qhY" secondAttribute="bottom" constant="8" symbolic="YES" id="iL8-in-fEZ"/>
+                            <constraint firstItem="dzi-tX-cjk" firstAttribute="top" secondItem="Be4-eh-d6A" secondAttribute="bottom" constant="74" id="j0k-4J-iRY"/>
+                            <constraint firstItem="6Tv-ef-icA" firstAttribute="width" secondItem="Be4-eh-d6A" secondAttribute="width" id="j8r-FS-vye"/>
+                            <constraint firstItem="rth-6G-lx5" firstAttribute="top" secondItem="3fQ-lz-Meh" secondAttribute="bottom" constant="8" symbolic="YES" id="k1c-9L-q04"/>
+                            <constraint firstItem="rth-6G-lx5" firstAttribute="leading" secondItem="6Tv-ef-icA" secondAttribute="leading" id="pzo-FO-KlW"/>
+                            <constraint firstItem="6Tv-ef-icA" firstAttribute="width" secondItem="mbE-uG-7Q9" secondAttribute="width" id="sFU-Dq-BhB"/>
+                            <constraint firstItem="Be4-eh-d6A" firstAttribute="top" secondItem="aDr-Ny-HuS" secondAttribute="bottom" constant="8" symbolic="YES" id="wCY-ok-fx0"/>
+                            <constraint firstItem="6Tv-ef-icA" firstAttribute="height" secondItem="aDr-Ny-HuS" secondAttribute="height" id="wDY-SW-2MO"/>
+                            <constraint firstItem="3fQ-lz-Meh" firstAttribute="trailing" secondItem="nSZ-be-9w6" secondAttribute="trailing" id="y0M-14-kfU"/>
                         </constraints>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
@@ -661,34 +693,10 @@
                                 <include reference="aDr-Ny-HuS"/>
                                 <include reference="dzi-tX-cjk"/>
                             </mask>
-                            <mask key="constraints">
-                                <include reference="eG1-Zi-10y"/>
-                                <include reference="Mas-dN-CK7"/>
-                                <include reference="Yhr-kO-rvA"/>
-                                <include reference="eBs-bL-2uN"/>
-                                <include reference="rke-HK-TN2"/>
-                                <include reference="Krj-8q-0MM"/>
-                                <include reference="SMU-0F-iua"/>
-                                <include reference="dua-dl-0Xn"/>
-                                <include reference="CGo-MP-OdR"/>
-                                <include reference="IGW-D2-ocd"/>
-                                <include reference="Lon-OU-dTd"/>
-                                <include reference="OhQ-oD-Xtb"/>
-                                <include reference="zFS-Lo-EVZ"/>
-                                <include reference="Bil-dS-UUY"/>
-                                <include reference="s3y-Ug-Umh"/>
-                                <include reference="TAd-3T-2lK"/>
-                                <include reference="afP-jF-fZX"/>
-                                <include reference="yuf-wG-f7E"/>
-                                <include reference="JSA-58-PRu"/>
-                                <include reference="Wk5-vv-7wR"/>
-                                <include reference="sSp-hf-GKN"/>
-                                <include reference="KfM-pm-QMR"/>
-                                <include reference="NLf-gR-CGj"/>
-                            </mask>
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="notesView" destination="Be4-eh-d6A" id="cF9-hg-Ibi"/>
                         <outlet property="plateEmail" destination="6Tv-ef-icA" id="sts-LN-sH5"/>
                         <outlet property="plateFood" destination="aDr-Ny-HuS" id="thC-Jd-l3Y"/>
                         <outlet property="plateMeal" destination="rth-6G-lx5" id="41B-Te-dGk"/>
@@ -699,7 +707,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0gV-kN-HVr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6399" y="1219"/>
+            <point key="canvasLocation" x="6374" y="1219"/>
         </scene>
         <!--Food Nomination-->
         <scene sceneID="bn1-9z-Cz6">

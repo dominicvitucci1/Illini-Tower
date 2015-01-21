@@ -24,6 +24,9 @@ class latePlateRequest: UIViewController, MFMailComposeViewControllerDelegate, U
     
     @IBOutlet weak var plateFood: UITextField!
     
+    @IBOutlet weak var notesView: UITextField!
+    
+    
     
     var kPreferredTextFieldToKeyboardOffset: CGFloat = 55.0
     var keyboardFrame: CGRect = CGRect.nullRect
@@ -40,6 +43,8 @@ class latePlateRequest: UIViewController, MFMailComposeViewControllerDelegate, U
         platePhoneNumber.delegate = self
         plateRoomNumber.delegate = self
         plateFood.delegate = self
+
+        
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillShow:", name: UIKeyboardWillShowNotification, object: nil)
         
@@ -63,6 +68,8 @@ class latePlateRequest: UIViewController, MFMailComposeViewControllerDelegate, U
         super.viewWillDisappear(animated)
         NSNotificationCenter.defaultCenter().removeObserver(self)
     }
+    
+    
     
     func keyboardWillShow(notification: NSNotification)
     {
@@ -165,62 +172,100 @@ class latePlateRequest: UIViewController, MFMailComposeViewControllerDelegate, U
         {
             
             
-            let mailComposeViewController = configuredMailComposeViewController()
-            if MFMailComposeViewController.canSendMail() {
-                self.presentViewController(mailComposeViewController, animated: true, completion: nil)
-            }
-                
-            else
-            {
-                self.showSendMailErrorAlert()
-            }
-        }
-        
-        func configuredMailComposeViewController() -> MFMailComposeViewController {
-            let mailComposerVC = MFMailComposeViewController()
-            mailComposerVC.mailComposeDelegate = self // Extremely important to set the --mailComposeDelegate-- property, NOT the --delegate-- property
+            var callUsAlert: UIAlertView = UIAlertView()
+            
+            callUsAlert.delegate = self
+            
+            callUsAlert.title = "By submitting this form you agree to have 1 meal deducted from your meal plan"
+            callUsAlert.message = "Requests can be picked up between 11am and 1pm for lunch, or between 7pm and 8pm for dinner"
+            callUsAlert.addButtonWithTitle("Cancel")
+            callUsAlert.addButtonWithTitle("Accept")
+            
+            callUsAlert.show()
+
             
             
-            
-            
-            let name = plateName.text
-            let meal = plateMeal.text
-            let email = plateEmail.text
-            let phoneNumber = platePhoneNumber.text
-            let roomNumber = plateRoomNumber.text
-            let food = plateFood.text
-            
-            
-            var message = "Name: " + name + "\n" + "Meal: " + meal + "\n" + "Email: " + email + "\n" + "Phone Number: " + phoneNumber + "\n" + "Room Number: " + roomNumber + "\n" + "Food: " + food
-            
-            
-            
-            
-        mailComposerVC.setToRecipients(["TheSkillet@illinitower.net"])
-            mailComposerVC.setSubject("Late Plate Request")
-            mailComposerVC.setMessageBody(message, isHTML: false)
-            
-            
-            plateName.text = ""
-            plateMeal.text = ""
-            plateEmail.text = ""
-            platePhoneNumber.text = ""
-            plateRoomNumber.text = ""
-            plateFood.text = ""
-            
-            
-          
-            
-            return mailComposerVC
             
             
         }
+    
+    func sendMail() {
+    
+    let mailComposeViewController = configuredMailComposeViewController()
+    if MFMailComposeViewController.canSendMail() {
+    self.presentViewController(mailComposeViewController, animated: true, completion: nil)
+    }
+    
+    else
+    {
+    self.showSendMailErrorAlert()
+    }
+}
+
+func configuredMailComposeViewController() -> MFMailComposeViewController {
+    let mailComposerVC = MFMailComposeViewController()
+    mailComposerVC.mailComposeDelegate = self // Extremely important to set the --mailComposeDelegate-- property, NOT the --delegate-- property
+    
+    
+    
+    
+    let name = plateName.text
+    let meal = plateMeal.text
+    let email = plateEmail.text
+    let phoneNumber = platePhoneNumber.text
+    let roomNumber = plateRoomNumber.text
+    let food = plateFood.text
+    let notes = notesView.text
+    
+    
+    var message = "Name: " + name + "\n" + "Meal: " + meal + "\n" + "Email: " + email + "\n" + "Phone Number: " + phoneNumber + "\n" + "Room Number: " + roomNumber + "\n" + "Food: " + food + "\n" + "Additional Notes: " + notes
+    
+    
+    
+    
+    mailComposerVC.setToRecipients(["TheSkillet@illinitower.net"])
+    mailComposerVC.setSubject("Late Plate Request")
+    mailComposerVC.setMessageBody(message, isHTML: false)
+    
+    
+    plateName.text = ""
+    plateMeal.text = ""
+    plateEmail.text = ""
+    platePhoneNumber.text = ""
+    plateRoomNumber.text = ""
+    plateFood.text = ""
+    notesView.text = ""
+    
+    
+    
+    
+    return mailComposerVC
+    
+    }
+    
+    func alertView(View: UIAlertView!, clickedButtonAtIndex buttonIndex: Int) {
         
+        switch buttonIndex {
+            
+        case 1:
+            self.sendMail()
+            NSLog("calling")
+            
+        default:
+            println("alertView \(buttonIndex) clicked")
+            
+            
+        }
+        
+        
+    }
+
+    
         func showSendMailErrorAlert() {
             let sendMailErrorAlert = UIAlertView(title: "Could Not Send Email", message: "Your device could not send e-mail.  Please check e-mail configuration and try again.", delegate: self, cancelButtonTitle: "OK")
             sendMailErrorAlert.show()
         }
-        
+    
         // MARK: MFMailComposeViewControllerDelegate Method
         func mailComposeController(controller: MFMailComposeViewController!, didFinishWithResult result: MFMailComposeResult, error: NSError!) {
             controller.dismissViewControllerAnimated(true, completion: nil)
