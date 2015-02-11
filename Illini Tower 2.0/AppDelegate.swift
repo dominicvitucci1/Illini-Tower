@@ -18,6 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         
+         //UIApplication.sharedApplication().statusBarStyle = UIStatusBarStyle.LightContent
+        
         
         
         //UINavigationBar.appearance().setBackgroundImage(UIImage(named: "Top Bar Test"), forBarMetrics: UIBarMetrics.Default)
@@ -27,6 +29,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Parse.setApplicationId("f42OCeAicD2YSb374hgdZH8yyV5HZciiw0wtQhGt", clientKey:"pBJczdgkxpBihlG2GJpPye1hA7DuyEtTqZaVqJBZ")
         
         PFAnalytics.trackAppOpenedWithLaunchOptionsInBackground(launchOptions, block: nil)
+        
+        NSLog("started Parse")
+        
         
         if application.respondsToSelector("isRegisteredForRemoteNotifications")
         {
@@ -92,8 +97,29 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     
-    func application(application: UIApplication, didReceiveRemoteNotification userInfo: [NSObject : AnyObject]) {
-        PFPush.handlePush(userInfo)
+    func application(application: UIApplication, didReceiveRemoteNotification userInfo: NSDictionary!) {
+        //PFPush.handlePush(userInfo)
+        
+        var notification:NSDictionary = userInfo.objectForKey("aps") as NSDictionary
+        
+        
+        
+        
+        
+        // Code for UIAlertView (ios7)
+        
+        var pushAlert: UIAlertView = UIAlertView()
+        
+        pushAlert.delegate = self
+        
+        pushAlert.title = notification.objectForKey("alert") as String
+        pushAlert.message = ""
+        pushAlert.addButtonWithTitle("OK")
+        
+        pushAlert.show()
+        
+        println("Recieved Notification")
+
     }
     
 

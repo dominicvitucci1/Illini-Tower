@@ -172,16 +172,16 @@ class latePlateRequest: UIViewController, MFMailComposeViewControllerDelegate, U
         {
             
             
-            var callUsAlert: UIAlertView = UIAlertView()
+            var latePlateAlert: UIAlertView = UIAlertView()
             
-            callUsAlert.delegate = self
+            latePlateAlert.delegate = self
             
-            callUsAlert.title = "By submitting this form you agree to have 1 meal deducted from your meal plan"
-            callUsAlert.message = "Requests can be picked up between 11am and 1pm for lunch, or between 7pm and 8pm for dinner"
-            callUsAlert.addButtonWithTitle("Cancel")
-            callUsAlert.addButtonWithTitle("Accept")
+            latePlateAlert.title = "By submitting this form you agree to have 1 meal deducted from your meal plan"
+            latePlateAlert.message = "Requests can be picked up between 11am and 1pm for lunch, or between 7pm and 8pm for dinner"
+            latePlateAlert.addButtonWithTitle("Cancel")
+            latePlateAlert.addButtonWithTitle("Accept")
             
-            callUsAlert.show()
+            latePlateAlert.show()
 
             
             
@@ -249,7 +249,7 @@ func configuredMailComposeViewController() -> MFMailComposeViewController {
             
         case 1:
             self.sendMail()
-            NSLog("calling")
+            NSLog("sent")
             
         default:
             println("alertView \(buttonIndex) clicked")
