@@ -35,7 +35,7 @@ class menuView: UIViewController
             {
             (config: PFConfig!, error: NSError!) -> Void in
             let menu = config["menuLink"] as String
-                NSLog("Yay! The number is %@!", menu)
+                NSLog("Menu Opened")
                 
                 let requestURL = NSURL(string: menu)
                 
@@ -43,6 +43,9 @@ class menuView: UIViewController
                 
                 self.webView.loadRequest(request)
             }
+        
+        var tracker:GAITracker = GAI.sharedInstance().defaultTracker as GAITracker
+        tracker.send(GAIDictionaryBuilder.createEventWithCategory("Menu", action: "MenuBeingViewed", label: "Menu", value: nil).build())
     }
     
     

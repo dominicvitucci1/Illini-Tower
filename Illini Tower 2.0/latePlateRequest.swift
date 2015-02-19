@@ -237,7 +237,8 @@ func configuredMailComposeViewController() -> MFMailComposeViewController {
     notesView.text = ""
     
     
-    
+    var tracker:GAITracker = GAI.sharedInstance().defaultTracker as GAITracker
+    tracker.send(GAIDictionaryBuilder.createEventWithCategory("LatePlateRequest", action: "LatePlateRequested", label: "LatePlateRequest", value: nil).build())
     
     return mailComposerVC
     

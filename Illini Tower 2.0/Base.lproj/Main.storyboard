@@ -226,10 +226,10 @@
             </objects>
             <point key="canvasLocation" x="5043" y="1219"/>
         </scene>
-        <!--View Controller-->
+        <!--My Illini View-->
         <scene sceneID="X1I-R9-A3Q">
             <objects>
-                <viewController id="Rfd-P8-WMR" sceneMemberID="viewController">
+                <viewController id="Rfd-P8-WMR" customClass="myIlliniView" customModule="Illini_Tower" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="GNe-YT-zJ2"/>
                         <viewControllerLayoutGuide type="bottom" id="Hyq-4y-j16"/>
@@ -326,10 +326,10 @@
             </objects>
             <point key="canvasLocation" x="5347" y="327"/>
         </scene>
-        <!--View Controller-->
+        <!--Dining View-->
         <scene sceneID="xcx-c3-4ar">
             <objects>
-                <viewController id="oVR-RX-ch9" sceneMemberID="viewController">
+                <viewController id="oVR-RX-ch9" customClass="diningView" customModule="Illini_Tower" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dGK-1z-MJO"/>
                         <viewControllerLayoutGuide type="bottom" id="oHZ-vY-RA3"/>

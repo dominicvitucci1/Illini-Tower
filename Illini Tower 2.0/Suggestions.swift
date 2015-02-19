@@ -29,6 +29,7 @@ class Suggestions: UIViewController, MFMailComposeViewControllerDelegate, UIText
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 
         
         nameField.delegate = self
@@ -188,6 +189,9 @@ class Suggestions: UIViewController, MFMailComposeViewControllerDelegate, UIText
                 nameField.text = ""
                 emailAddressField.text = ""
                 suggestionField.text = ""
+                
+                var tracker:GAITracker = GAI.sharedInstance().defaultTracker as GAITracker
+                tracker.send(GAIDictionaryBuilder.createEventWithCategory("Suggestions", action: "SuggestionSent", label: "Suggestions", value: nil).build())
                 
                 return mailComposerVC
     

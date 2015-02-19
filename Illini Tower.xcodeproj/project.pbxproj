@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B61D66F91A95359D00550250 /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B61D66F81A95359D00550250 /* libGoogleAnalyticsServices.a */; };
+		B61D66FB1A9535B000550250 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B61D66FA1A9535B000550250 /* CoreData.framework */; };
+		B61D66FD1A96296100550250 /* myIlliniView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61D66FC1A96296100550250 /* myIlliniView.swift */; };
+		B61D66FF1A962A6F00550250 /* diningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61D66FE1A962A6F00550250 /* diningView.swift */; };
 		B69D16ED1A413303007755E4 /* Contact Your RA Slice.png in Resources */ = {isa = PBXBuildFile; fileRef = B69D16E91A413303007755E4 /* Contact Your RA Slice.png */; };
 		B69D16EE1A413303007755E4 /* Refer A Friend Slice.png in Resources */ = {isa = PBXBuildFile; fileRef = B69D16EA1A413303007755E4 /* Refer A Friend Slice.png */; };
 		B69D16EF1A413303007755E4 /* Submit Work Order Slice.png in Resources */ = {isa = PBXBuildFile; fileRef = B69D16EB1A413303007755E4 /* Submit Work Order Slice.png */; };
@@ -64,6 +68,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B61D66EE1A95359400550250 /* GAI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GAI.h; sourceTree = "<group>"; };
+		B61D66EF1A95359400550250 /* GAIDictionaryBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GAIDictionaryBuilder.h; sourceTree = "<group>"; };
+		B61D66F01A95359400550250 /* GAIEcommerceFields.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GAIEcommerceFields.h; sourceTree = "<group>"; };
+		B61D66F11A95359400550250 /* GAIEcommerceProduct.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GAIEcommerceProduct.h; sourceTree = "<group>"; };
+		B61D66F21A95359400550250 /* GAIEcommerceProductAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GAIEcommerceProductAction.h; sourceTree = "<group>"; };
+		B61D66F31A95359400550250 /* GAIEcommercePromotion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GAIEcommercePromotion.h; sourceTree = "<group>"; };
+		B61D66F41A95359400550250 /* GAIFields.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GAIFields.h; sourceTree = "<group>"; };
+		B61D66F51A95359400550250 /* GAILogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GAILogger.h; sourceTree = "<group>"; };
+		B61D66F61A95359400550250 /* GAITrackedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GAITrackedViewController.h; sourceTree = "<group>"; };
+		B61D66F71A95359400550250 /* GAITracker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GAITracker.h; sourceTree = "<group>"; };
+		B61D66F81A95359D00550250 /* libGoogleAnalyticsServices.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAnalyticsServices.a; sourceTree = "<group>"; };
+		B61D66FA1A9535B000550250 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		B61D66FC1A96296100550250 /* myIlliniView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myIlliniView.swift; sourceTree = "<group>"; };
+		B61D66FE1A962A6F00550250 /* diningView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = diningView.swift; sourceTree = "<group>"; };
 		B69D16E91A413303007755E4 /* Contact Your RA Slice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Contact Your RA Slice.png"; sourceTree = "<group>"; };
 		B69D16EA1A413303007755E4 /* Refer A Friend Slice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Refer A Friend Slice.png"; sourceTree = "<group>"; };
 		B69D16EB1A413303007755E4 /* Submit Work Order Slice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Submit Work Order Slice.png"; sourceTree = "<group>"; };
@@ -130,7 +148,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B61D66F91A95359D00550250 /* libGoogleAnalyticsServices.a in Frameworks */,
 				B6D3B6F91A029D9D00563FE8 /* SystemConfiguration.framework in Frameworks */,
+				B61D66FB1A9535B000550250 /* CoreData.framework in Frameworks */,
 				B6D3B6F71A029D8C00563FE8 /* StoreKit.framework in Frameworks */,
 				B6D3B6F51A029D8400563FE8 /* Security.framework in Frameworks */,
 				B6D3B6F31A029D7900563FE8 /* QuartzCore.framework in Frameworks */,
@@ -155,9 +175,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B6D3B68B1A001BD300563FE8 = {
+		B61D66EB1A95355000550250 /* FrameWorks */ = {
 			isa = PBXGroup;
 			children = (
+				B61D66FA1A9535B000550250 /* CoreData.framework */,
 				B6D3B6F81A029D9D00563FE8 /* SystemConfiguration.framework */,
 				B6D3B6F61A029D8C00563FE8 /* StoreKit.framework */,
 				B6D3B6F41A029D8400563FE8 /* Security.framework */,
@@ -170,6 +191,33 @@
 				B6D3B6E61A029D1F00563FE8 /* AudioToolbox.framework */,
 				B6D3B6E21A029CE700563FE8 /* Bolts.framework */,
 				B6D3B6E31A029CE700563FE8 /* Parse.framework */,
+			);
+			name = FrameWorks;
+			sourceTree = "<group>";
+		};
+		B61D66ED1A95358000550250 /* Google Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				B61D66F81A95359D00550250 /* libGoogleAnalyticsServices.a */,
+				B61D66EE1A95359400550250 /* GAI.h */,
+				B61D66EF1A95359400550250 /* GAIDictionaryBuilder.h */,
+				B61D66F01A95359400550250 /* GAIEcommerceFields.h */,
+				B61D66F11A95359400550250 /* GAIEcommerceProduct.h */,
+				B61D66F21A95359400550250 /* GAIEcommerceProductAction.h */,
+				B61D66F31A95359400550250 /* GAIEcommercePromotion.h */,
+				B61D66F41A95359400550250 /* GAIFields.h */,
+				B61D66F51A95359400550250 /* GAILogger.h */,
+				B61D66F61A95359400550250 /* GAITrackedViewController.h */,
+				B61D66F71A95359400550250 /* GAITracker.h */,
+			);
+			name = "Google Analytics";
+			sourceTree = "<group>";
+		};
+		B6D3B68B1A001BD300563FE8 = {
+			isa = PBXGroup;
+			children = (
+				B61D66ED1A95358000550250 /* Google Analytics */,
+				B61D66EB1A95355000550250 /* FrameWorks */,
 				B6D3B6961A001BD300563FE8 /* Illini Tower Files */,
 				B6D3B6AF1A001BD300563FE8 /* Illini TowerTests */,
 				B6D3B6951A001BD300563FE8 /* Products */,
@@ -191,6 +239,8 @@
 			children = (
 				B6D3B6991A001BD300563FE8 /* AppDelegate.swift */,
 				B6D3B69E1A001BD300563FE8 /* ViewController.swift */,
+				B61D66FC1A96296100550250 /* myIlliniView.swift */,
+				B61D66FE1A962A6F00550250 /* diningView.swift */,
 				B6D3B6A01A001BD300563FE8 /* Main.storyboard */,
 				B6B0CCF01A06B8BF00AE98A9 /* contactYourRA.swift */,
 				B6DB30621A02F1F500DC7F8D /* foodNomination.swift */,
@@ -391,7 +441,9 @@
 				B6D3B69D1A001BD300563FE8 /* Illini_Tower_2_0.xcdatamodeld in Sources */,
 				B6DB30611A02C95D00DC7F8D /* latePlateRequest.swift in Sources */,
 				B6D3B6C51A002F6100563FE8 /* instagramView.swift in Sources */,
+				B61D66FD1A96296100550250 /* myIlliniView.swift in Sources */,
 				B6D3B6D51A00619A00563FE8 /* events.swift in Sources */,
+				B61D66FF1A962A6F00550250 /* diningView.swift in Sources */,
 				B6D3B6D31A005EAF00563FE8 /* whatsNearBy.swift in Sources */,
 				B6D3B6E11A01917900563FE8 /* writeAReview.swift in Sources */,
 				B6D3B6D91A00992900563FE8 /* menuView.swift in Sources */,
@@ -532,6 +584,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Flurry",
+					"$(PROJECT_DIR)",
 				);
 				PRODUCT_NAME = "Illini Tower";
 				PROVISIONING_PROFILE = "";
@@ -558,6 +611,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Flurry",
+					"$(PROJECT_DIR)",
 				);
 				PRODUCT_NAME = "Illini Tower";
 				PROVISIONING_PROFILE = "";

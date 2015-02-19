@@ -41,12 +41,13 @@ class contactYourRA: UIViewController {
             {
                 (config: PFConfig!, error: NSError!) -> Void in
                 let contact = config["nonAtomicStratLink"] as String
-                NSLog("Yay! The number is %@!", contact)
+                NSLog("Contact Page Opened")
                 
                 self.webView.loadHTMLString(contact, baseURL: nil)
         }
         
-
+        var tracker:GAITracker = GAI.sharedInstance().defaultTracker as GAITracker
+        tracker.send(GAIDictionaryBuilder.createEventWithCategory("ContactYourRA", action: "ContactPageOpened", label: "ContactYourRA", value: nil).build())
 
    }
 

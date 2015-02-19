@@ -14,7 +14,11 @@ class ViewController: UIViewController, UIAlertViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        //Screen Tracking for Google Analytcis
+        var tracker:GAITracker = GAI.sharedInstance().defaultTracker as GAITracker
+        tracker.set(kGAIScreenName, value:"Home Screen")
+        tracker.send(GAIDictionaryBuilder.createScreenView().build())
         
         
         navigationItem.titleView = UIImageView(image: UIImage(named: "Top Bar Test"))

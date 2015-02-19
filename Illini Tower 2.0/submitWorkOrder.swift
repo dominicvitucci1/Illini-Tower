@@ -35,6 +35,9 @@ class submitWorkOrder: UIViewController {
         
         super.viewDidLoad()
         
+        var tracker:GAITracker = GAI.sharedInstance().defaultTracker as GAITracker
+        tracker.send(GAIDictionaryBuilder.createEventWithCategory("SubmitWorkOrder", action: "WorkOrderPageOpened", label: "WorkOrder", value: nil).build())
+        
         
         
     }
