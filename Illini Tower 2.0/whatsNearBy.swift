@@ -16,66 +16,92 @@ class whatsNearBy: UIViewController, MKMapViewDelegate {
     
         override func viewDidLoad() {
             super.viewDidLoad()
+            map.delegate = self
             
-            var location1 = CLLocationCoordinate2D(
+            var initialLocation = CLLocationCoordinate2D(
                 latitude: 40.106485,
                 longitude: -88.232341
             )
             
             var span1 = MKCoordinateSpanMake(0.01, 0.01)
-            var region1 = MKCoordinateRegion(center: location1, span: span1)
+            var region1 = MKCoordinateRegion(center: initialLocation, span: span1)
             
             map.setRegion(region1, animated: true)
             
-            var annotation1 = MKPointAnnotation()
-            annotation1.setCoordinate(location1)
-            annotation1.title = "Illini Tower"
-            annotation1.subtitle = "409 East Chalmers Street, Champaign, IL 61820"
-            
-            self.map.addAnnotation(annotation1)
-            
-            
-            var location2 = CLLocationCoordinate2D(
-                latitude: 40.108530,
-                longitude: -88.229258
-            )
-            
-            
-            var annotation2 = MKPointAnnotation()
-            annotation2.setCoordinate(location2)
-            annotation2.title = "Illini Union Bookstore"
-            annotation2.subtitle = "809 South Wright Street, Champaign, IL 61820"
-            
-            self.map.addAnnotation(annotation2)
-            
-            
-            var location3 = CLLocationCoordinate2D(
-                latitude: 40.105945,
-                longitude: -88.227198
-            )
-            
-            
-            var annotation3 = MKPointAnnotation()
-            annotation3.setCoordinate(location3)
-            annotation3.title = "Foellinger Auditorium"
-            annotation3.subtitle = "709 South Mathews Avenue, Urbana, IL 61801"
-            
-            self.map.addAnnotation(annotation3)
-            
-            
-            
-            var location4 = CLLocationCoordinate2D(
-                latitude: 40.106867,
-                longitude: -88.233317
-            )
-            
-            
-            var annotation4 = MKPointAnnotation()
-            annotation4.setCoordinate(location4)
-            annotation4.title = "Champaign-Urbana MTD Bus Stop"
-            annotation4.subtitle = "Corner of Fourth Street and Chalmers Street"
-            
-            self.map.addAnnotation(annotation4)
-
+            annotate()
+        
+    }
+    
+    func mapView(mapView: MKMapView!, viewForAnnotation annotation: MKAnnotation!) -> MKAnnotationView! {
+        
+        NSLog("viewForannotation")
+        if annotation is MKUserLocation {
+            //return nil
+            return nil
         }
+        
+        let reuseId = "pin"
+        var pinView = mapView.dequeueReusableAnnotationViewWithIdentifier(reuseId) as? MKPinAnnotationView
+        
+        if pinView == nil {
+            //println("Pinview was nil")
+            pinView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: reuseId)
+            pinView!.canShowCallout = true
+            pinView!.animatesDrop = true
+        }
+        
+        var button = UIButton.buttonWithType(UIButtonType.DetailDisclosure) as! UIButton // button with info sign in it
+        
+        pinView?.rightCalloutAccessoryView = button
+        
+        
+        return pinView
+    }
+    
+    
+    func mapView(mapView: MKMapView!, annotationView view: MKAnnotationView!,
+        calloutAccessoryControlTapped control: UIControl!) {
+            let location = view.annotation as! Point
+            let launchOptions = [MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeDriving]
+            location.mapItem().openInMapsWithLaunchOptions(launchOptions)
+    }
+    
+    
+    
+    
+    func annotate() {
+        
+        // show point on map
+        let point1 = Point(title: "Illini Tower",
+            locationName: "409 East Chalmers Street, Champaign, IL 61820",
+            discipline: "",
+            coordinate: CLLocationCoordinate2D(latitude: 40.106485, longitude: -88.232341))
+        
+        map.addAnnotation(point1)
+        
+        
+        let point2 = Point(title: "Illini Union Bookstore",
+            locationName: "809 South Wright Street, Champaign, IL 61820",
+            discipline: "",
+            coordinate: CLLocationCoordinate2D(latitude: 40.108530, longitude: -88.229258))
+        
+        map.addAnnotation(point2)
+        
+        
+        let point3 = Point(title: "Foellinger Auditorium",
+            locationName: "709 South Mathews Avenue, Urbana, IL 61801",
+            discipline: "",
+            coordinate: CLLocationCoordinate2D(latitude: 40.105945, longitude: -88.227198))
+        
+        map.addAnnotation(point3)
+        
+        let point4 = Point(title: "Champaign-Urbana MTD Bus Stop",
+        locationName: "Corner of Fourth Street and Chalmers Street",
+        discipline: "",
+        coordinate: CLLocationCoordinate2D(latitude: 40.106867, longitude: -88.233317))
+        
+        map.addAnnotation(point4)
+        
+    }
+
 }

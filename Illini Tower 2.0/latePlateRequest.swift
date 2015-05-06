@@ -54,7 +54,7 @@ class latePlateRequest: UIViewController, MFMailComposeViewControllerDelegate, U
         {
             if (subview.isKindOfClass(UITextField))
             {
-                var textField = subview as UITextField
+                var textField = subview as! UITextField
                 textField.addTarget(self, action: "textFieldDidReturn:", forControlEvents: UIControlEvents.EditingDidEndOnExit)
                 
                 textField.addTarget(self, action: "textFieldDidBeginEditing:", forControlEvents: UIControlEvents.EditingDidBegin)
@@ -76,7 +76,7 @@ class latePlateRequest: UIViewController, MFMailComposeViewControllerDelegate, U
         self.keyboardIsShowing = true
         
         if let info = notification.userInfo {
-            self.keyboardFrame = (info[UIKeyboardFrameEndUserInfoKey] as NSValue).CGRectValue()
+            self.keyboardFrame = (info[UIKeyboardFrameEndUserInfoKey] as! NSValue).CGRectValue()
             self.arrangeViewOffsetFromKeyboard()
         }
         
@@ -120,7 +120,7 @@ class latePlateRequest: UIViewController, MFMailComposeViewControllerDelegate, U
         }
     }
     
-    override func touchesBegan(touches: NSSet, withEvent event: UIEvent)
+    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent)
     {
         if (self.activeTextField != nil)
         {
@@ -157,7 +157,7 @@ class latePlateRequest: UIViewController, MFMailComposeViewControllerDelegate, U
     
     
     
-    func textFieldShouldReturn(textField: UITextField!) -> Bool // called when 'return' key pressed. return NO to ignore.
+    func textFieldShouldReturn(textField: UITextField) -> Bool // called when 'return' key pressed. return NO to ignore.
     {
         textField.resignFirstResponder()
         return true;
@@ -238,7 +238,7 @@ func configuredMailComposeViewController() -> MFMailComposeViewController {
     
     
     var tracker:GAITracker = GAI.sharedInstance().defaultTracker as GAITracker
-    tracker.send(GAIDictionaryBuilder.createEventWithCategory("LatePlateRequest", action: "LatePlateRequested", label: "LatePlateRequest", value: nil).build())
+    tracker.send(GAIDictionaryBuilder.createEventWithCategory("LatePlateRequest", action: "LatePlateRequested", label: "LatePlateRequest", value: nil).build() as [NSObject : AnyObject])
     
     return mailComposerVC
     

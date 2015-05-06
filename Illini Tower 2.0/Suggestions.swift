@@ -44,7 +44,7 @@ class Suggestions: UIViewController, MFMailComposeViewControllerDelegate, UIText
         {
             if (subview.isKindOfClass(UITextField))
             {
-                var textField = subview as UITextField
+                var textField = subview as! UITextField
                 textField.addTarget(self, action: "textFieldDidReturn:", forControlEvents: UIControlEvents.EditingDidEndOnExit)
                 
                 textField.addTarget(self, action: "textFieldDidBeginEditing:", forControlEvents: UIControlEvents.EditingDidBegin)
@@ -65,7 +65,7 @@ class Suggestions: UIViewController, MFMailComposeViewControllerDelegate, UIText
         self.keyboardIsShowing = true
         
         if let info = notification.userInfo {
-            self.keyboardFrame = (info[UIKeyboardFrameEndUserInfoKey] as NSValue).CGRectValue()
+            self.keyboardFrame = (info[UIKeyboardFrameEndUserInfoKey] as! NSValue).CGRectValue()
             self.arrangeViewOffsetFromKeyboard()
         }
         
@@ -109,7 +109,7 @@ class Suggestions: UIViewController, MFMailComposeViewControllerDelegate, UIText
         }
     }
     
-    override func touchesBegan(touches: NSSet, withEvent event: UIEvent)
+    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent)
     {
         if (self.activeTextField != nil)
         {
@@ -144,7 +144,7 @@ class Suggestions: UIViewController, MFMailComposeViewControllerDelegate, UIText
     }
     
     
-    func textFieldShouldReturn(textField: UITextField!) -> Bool // called when 'return' key pressed. return NO to ignore.
+    func textFieldShouldReturn(textField: UITextField) -> Bool // called when 'return' key pressed. return NO to ignore.
     {
         textField.resignFirstResponder()
         return true;
@@ -191,7 +191,7 @@ class Suggestions: UIViewController, MFMailComposeViewControllerDelegate, UIText
                 suggestionField.text = ""
                 
                 var tracker:GAITracker = GAI.sharedInstance().defaultTracker as GAITracker
-                tracker.send(GAIDictionaryBuilder.createEventWithCategory("Suggestions", action: "SuggestionSent", label: "Suggestions", value: nil).build())
+                tracker.send(GAIDictionaryBuilder.createEventWithCategory("Suggestions", action: "SuggestionSent", label: "Suggestions", value: nil).build() as [NSObject : AnyObject])
                 
                 return mailComposerVC
     

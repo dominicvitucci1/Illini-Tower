@@ -11,6 +11,7 @@
 		B61D66FB1A9535B000550250 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B61D66FA1A9535B000550250 /* CoreData.framework */; };
 		B61D66FD1A96296100550250 /* myIlliniView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61D66FC1A96296100550250 /* myIlliniView.swift */; };
 		B61D66FF1A962A6F00550250 /* diningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61D66FE1A962A6F00550250 /* diningView.swift */; };
+		B6253EAB1AEC2F6500AF1F05 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6253EAA1AEC2F6500AF1F05 /* WebViewController.swift */; };
 		B69D16ED1A413303007755E4 /* Contact Your RA Slice.png in Resources */ = {isa = PBXBuildFile; fileRef = B69D16E91A413303007755E4 /* Contact Your RA Slice.png */; };
 		B69D16EE1A413303007755E4 /* Refer A Friend Slice.png in Resources */ = {isa = PBXBuildFile; fileRef = B69D16EA1A413303007755E4 /* Refer A Friend Slice.png */; };
 		B69D16EF1A413303007755E4 /* Submit Work Order Slice.png in Resources */ = {isa = PBXBuildFile; fileRef = B69D16EB1A413303007755E4 /* Submit Work Order Slice.png */; };
@@ -21,6 +22,7 @@
 		B69D16F81A413FBB007755E4 /* Today's Menu Slice.png in Resources */ = {isa = PBXBuildFile; fileRef = B69D16F51A413FBB007755E4 /* Today's Menu Slice.png */; };
 		B69D16FC1A435E75007755E4 /* My Illini Background.png in Resources */ = {isa = PBXBuildFile; fileRef = B69D16FB1A435E75007755E4 /* My Illini Background.png */; };
 		B6B0CCF11A06B8BF00AE98A9 /* contactYourRA.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B0CCF01A06B8BF00AE98A9 /* contactYourRA.swift */; };
+		B6D263A51AEFC17F00B7903D /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D263A41AEFC17F00B7903D /* Point.swift */; };
 		B6D3B69A1A001BD300563FE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D3B6991A001BD300563FE8 /* AppDelegate.swift */; };
 		B6D3B69D1A001BD300563FE8 /* Illini_Tower_2_0.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B6D3B69B1A001BD300563FE8 /* Illini_Tower_2_0.xcdatamodeld */; };
 		B6D3B69F1A001BD300563FE8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D3B69E1A001BD300563FE8 /* ViewController.swift */; };
@@ -28,18 +30,11 @@
 		B6D3B6A41A001BD300563FE8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6D3B6A31A001BD300563FE8 /* Images.xcassets */; };
 		B6D3B6A71A001BD300563FE8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6D3B6A51A001BD300563FE8 /* LaunchScreen.xib */; };
 		B6D3B6B31A001BD300563FE8 /* Illini_Tower_2_0Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D3B6B21A001BD300563FE8 /* Illini_Tower_2_0Tests.swift */; };
-		B6D3B6BF1A001D4B00563FE8 /* payYourRent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D3B6BE1A001D4B00563FE8 /* payYourRent.swift */; };
 		B6D3B6C31A002D1500563FE8 /* EmailComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D3B6C21A002D1500563FE8 /* EmailComposer.swift */; };
-		B6D3B6C51A002F6100563FE8 /* instagramView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D3B6C41A002F6100563FE8 /* instagramView.swift */; };
-		B6D3B6C71A002F6F00563FE8 /* twitterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D3B6C61A002F6F00563FE8 /* twitterView.swift */; };
-		B6D3B6C91A002F7F00563FE8 /* facebookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D3B6C81A002F7F00563FE8 /* facebookView.swift */; };
 		B6D3B6CF1A00528C00563FE8 /* Suggestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D3B6CE1A00528C00563FE8 /* Suggestions.swift */; };
 		B6D3B6D31A005EAF00563FE8 /* whatsNearBy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D3B6D21A005EAF00563FE8 /* whatsNearBy.swift */; };
-		B6D3B6D51A00619A00563FE8 /* events.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D3B6D41A00619A00563FE8 /* events.swift */; };
 		B6D3B6D71A0065E300563FE8 /* referAFriend.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D3B6D61A0065E300563FE8 /* referAFriend.swift */; };
 		B6D3B6D91A00992900563FE8 /* menuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D3B6D81A00992900563FE8 /* menuView.swift */; };
-		B6D3B6DF1A0190B900563FE8 /* submitWorkOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D3B6DE1A0190B900563FE8 /* submitWorkOrder.swift */; };
-		B6D3B6E11A01917900563FE8 /* writeAReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D3B6E01A01917900563FE8 /* writeAReview.swift */; };
 		B6D3B6E41A029CE700563FE8 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6D3B6E21A029CE700563FE8 /* Bolts.framework */; };
 		B6D3B6E51A029CE700563FE8 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6D3B6E31A029CE700563FE8 /* Parse.framework */; };
 		B6D3B6E71A029D1F00563FE8 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6D3B6E61A029D1F00563FE8 /* AudioToolbox.framework */; };
@@ -82,6 +77,7 @@
 		B61D66FA1A9535B000550250 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		B61D66FC1A96296100550250 /* myIlliniView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myIlliniView.swift; sourceTree = "<group>"; };
 		B61D66FE1A962A6F00550250 /* diningView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = diningView.swift; sourceTree = "<group>"; };
+		B6253EAA1AEC2F6500AF1F05 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		B69D16E91A413303007755E4 /* Contact Your RA Slice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Contact Your RA Slice.png"; sourceTree = "<group>"; };
 		B69D16EA1A413303007755E4 /* Refer A Friend Slice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Refer A Friend Slice.png"; sourceTree = "<group>"; };
 		B69D16EB1A413303007755E4 /* Submit Work Order Slice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Submit Work Order Slice.png"; sourceTree = "<group>"; };
@@ -92,6 +88,7 @@
 		B69D16F51A413FBB007755E4 /* Today's Menu Slice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Today's Menu Slice.png"; sourceTree = "<group>"; };
 		B69D16FB1A435E75007755E4 /* My Illini Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "My Illini Background.png"; sourceTree = "<group>"; };
 		B6B0CCF01A06B8BF00AE98A9 /* contactYourRA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = contactYourRA.swift; sourceTree = "<group>"; };
+		B6D263A41AEFC17F00B7903D /* Point.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
 		B6D3B6941A001BD300563FE8 /* Illini Tower.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Illini Tower.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6D3B6981A001BD300563FE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B6D3B6991A001BD300563FE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -103,18 +100,11 @@
 		B6D3B6AC1A001BD300563FE8 /* Illini TowerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Illini TowerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6D3B6B11A001BD300563FE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B6D3B6B21A001BD300563FE8 /* Illini_Tower_2_0Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Illini_Tower_2_0Tests.swift; sourceTree = "<group>"; };
-		B6D3B6BE1A001D4B00563FE8 /* payYourRent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = payYourRent.swift; sourceTree = "<group>"; };
 		B6D3B6C21A002D1500563FE8 /* EmailComposer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailComposer.swift; sourceTree = "<group>"; };
-		B6D3B6C41A002F6100563FE8 /* instagramView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = instagramView.swift; sourceTree = "<group>"; };
-		B6D3B6C61A002F6F00563FE8 /* twitterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = twitterView.swift; sourceTree = "<group>"; };
-		B6D3B6C81A002F7F00563FE8 /* facebookView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = facebookView.swift; sourceTree = "<group>"; };
 		B6D3B6CE1A00528C00563FE8 /* Suggestions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Suggestions.swift; sourceTree = "<group>"; };
 		B6D3B6D21A005EAF00563FE8 /* whatsNearBy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = whatsNearBy.swift; sourceTree = "<group>"; };
-		B6D3B6D41A00619A00563FE8 /* events.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = events.swift; sourceTree = "<group>"; };
 		B6D3B6D61A0065E300563FE8 /* referAFriend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = referAFriend.swift; sourceTree = "<group>"; };
 		B6D3B6D81A00992900563FE8 /* menuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = menuView.swift; sourceTree = "<group>"; };
-		B6D3B6DE1A0190B900563FE8 /* submitWorkOrder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = submitWorkOrder.swift; sourceTree = "<group>"; };
-		B6D3B6E01A01917900563FE8 /* writeAReview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = writeAReview.swift; sourceTree = "<group>"; };
 		B6D3B6E21A029CE700563FE8 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		B6D3B6E31A029CE700563FE8 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		B6D3B6E61A029D1F00563FE8 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -241,22 +231,17 @@
 				B6D3B69E1A001BD300563FE8 /* ViewController.swift */,
 				B61D66FC1A96296100550250 /* myIlliniView.swift */,
 				B61D66FE1A962A6F00550250 /* diningView.swift */,
+				B6253EAA1AEC2F6500AF1F05 /* WebViewController.swift */,
 				B6D3B6A01A001BD300563FE8 /* Main.storyboard */,
 				B6B0CCF01A06B8BF00AE98A9 /* contactYourRA.swift */,
 				B6DB30621A02F1F500DC7F8D /* foodNomination.swift */,
 				B6DB30601A02C95D00DC7F8D /* latePlateRequest.swift */,
-				B6D3B6E01A01917900563FE8 /* writeAReview.swift */,
 				B6D3B6D81A00992900563FE8 /* menuView.swift */,
-				B6D3B6DE1A0190B900563FE8 /* submitWorkOrder.swift */,
-				B6D3B6D41A00619A00563FE8 /* events.swift */,
 				B6D3B6D21A005EAF00563FE8 /* whatsNearBy.swift */,
+				B6D263A41AEFC17F00B7903D /* Point.swift */,
 				B6D3B6CE1A00528C00563FE8 /* Suggestions.swift */,
 				B6D3B6D61A0065E300563FE8 /* referAFriend.swift */,
-				B6D3B6C41A002F6100563FE8 /* instagramView.swift */,
-				B6D3B6C61A002F6F00563FE8 /* twitterView.swift */,
-				B6D3B6C81A002F7F00563FE8 /* facebookView.swift */,
 				B6D3B6C21A002D1500563FE8 /* EmailComposer.swift */,
-				B6D3B6BE1A001D4B00563FE8 /* payYourRent.swift */,
 				B6D3B6A31A001BD300563FE8 /* Images.xcassets */,
 				B6D3B6A51A001BD300563FE8 /* LaunchScreen.xib */,
 				B6D3B69B1A001BD300563FE8 /* Illini_Tower_2_0.xcdatamodeld */,
@@ -434,24 +419,19 @@
 			files = (
 				B6B0CCF11A06B8BF00AE98A9 /* contactYourRA.swift in Sources */,
 				B6D3B6C31A002D1500563FE8 /* EmailComposer.swift in Sources */,
-				B6D3B6DF1A0190B900563FE8 /* submitWorkOrder.swift in Sources */,
 				B6D3B69F1A001BD300563FE8 /* ViewController.swift in Sources */,
-				B6D3B6C91A002F7F00563FE8 /* facebookView.swift in Sources */,
+				B6253EAB1AEC2F6500AF1F05 /* WebViewController.swift in Sources */,
 				B6D3B6CF1A00528C00563FE8 /* Suggestions.swift in Sources */,
 				B6D3B69D1A001BD300563FE8 /* Illini_Tower_2_0.xcdatamodeld in Sources */,
 				B6DB30611A02C95D00DC7F8D /* latePlateRequest.swift in Sources */,
-				B6D3B6C51A002F6100563FE8 /* instagramView.swift in Sources */,
 				B61D66FD1A96296100550250 /* myIlliniView.swift in Sources */,
-				B6D3B6D51A00619A00563FE8 /* events.swift in Sources */,
 				B61D66FF1A962A6F00550250 /* diningView.swift in Sources */,
 				B6D3B6D31A005EAF00563FE8 /* whatsNearBy.swift in Sources */,
-				B6D3B6E11A01917900563FE8 /* writeAReview.swift in Sources */,
 				B6D3B6D91A00992900563FE8 /* menuView.swift in Sources */,
-				B6D3B6BF1A001D4B00563FE8 /* payYourRent.swift in Sources */,
+				B6D263A51AEFC17F00B7903D /* Point.swift in Sources */,
 				B6D3B69A1A001BD300563FE8 /* AppDelegate.swift in Sources */,
 				B6DB30631A02F1F500DC7F8D /* foodNomination.swift in Sources */,
 				B6D3B6D71A0065E300563FE8 /* referAFriend.swift in Sources */,
-				B6D3B6C71A002F6F00563FE8 /* twitterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

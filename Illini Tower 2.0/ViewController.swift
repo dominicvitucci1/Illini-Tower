@@ -18,7 +18,7 @@ class ViewController: UIViewController, UIAlertViewDelegate {
         //Screen Tracking for Google Analytcis
         var tracker:GAITracker = GAI.sharedInstance().defaultTracker as GAITracker
         tracker.set(kGAIScreenName, value:"Home Screen")
-        tracker.send(GAIDictionaryBuilder.createScreenView().build())
+        tracker.send(GAIDictionaryBuilder.createScreenView().build() as [NSObject : AnyObject])
         
         
         navigationItem.titleView = UIImageView(image: UIImage(named: "Top Bar Test"))
@@ -99,7 +99,7 @@ class ViewController: UIViewController, UIAlertViewDelegate {
     }
     
     // Code for UIAlertView (iOS 7)
-    func alertView(View: UIAlertView!, clickedButtonAtIndex buttonIndex: Int) {
+    func alertView(View: UIAlertView, clickedButtonAtIndex buttonIndex: Int) {
         
         switch buttonIndex {
             
@@ -122,6 +122,65 @@ class ViewController: UIViewController, UIAlertViewDelegate {
         let url:NSURL = NSURL(string:phone)!;
         UIApplication.sharedApplication().openURL(url);
     }
+    
+
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+        
+        
+        if segue.identifier == "rent" {
+            
+            if let destinationVC = segue.destinationViewController as? WebViewController
+            {
+                destinationVC.urlPath = "https://portal.campushousing.com/ILLINOIS-Illini-Tower/Default.aspx?Params=L9ezxPcQnQuRGKTzF%2b4sxeNblvAA%2b26c" as String
+            }
+            
+            
+            
+        }
+            
+        else if segue.identifier == "events" {
+            
+            if let destinationVC = segue.destinationViewController as? WebViewController
+            {
+                destinationVC.urlPath = "http://www.facebook.com/IlliniTower/events" as String
+            }
+            
+            
+        }
+        
+        else if segue.identifier == "instagram" {
+            
+            if let destinationVC = segue.destinationViewController as? WebViewController
+            {
+                destinationVC.urlPath = "http://instagram.com/illinitower" as String
+            }
+            
+            
+        }
+        
+        else if segue.identifier == "twitter" {
+            
+            if let destinationVC = segue.destinationViewController as? WebViewController
+            {
+                destinationVC.urlPath = "http://www.twitter.com/illinitower" as String
+            }
+            
+            
+        }
+        
+        else if segue.identifier == "facebook" {
+            
+            if let destinationVC = segue.destinationViewController as? WebViewController
+            {
+                destinationVC.urlPath = "http://www.facebook.com/illinitower" as String
+            }
+            
+            
+        }
+    }
+
 
 
 }

@@ -17,7 +17,7 @@ class diningView: UIViewController {
         //Screen Tracking for Google Analytcis
         var tracker:GAITracker = GAI.sharedInstance().defaultTracker as GAITracker
         tracker.set(kGAIScreenName, value:"Dining Screen")
-        tracker.send(GAIDictionaryBuilder.createScreenView().build())
+        tracker.send(GAIDictionaryBuilder.createScreenView().build() as [NSObject : AnyObject])
         
         //navigationItem.titleView = UIImageView(image: UIImage(named: "Top Bar Test"))
         

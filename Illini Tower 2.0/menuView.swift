@@ -34,7 +34,7 @@ class menuView: UIViewController
         PFConfig.getConfigInBackgroundWithBlock
             {
             (config: PFConfig!, error: NSError!) -> Void in
-            let menu = config["menuLink"] as String
+            let menu = config["menuLink"] as! String
                 NSLog("Menu Opened")
                 
                 let requestURL = NSURL(string: menu)
@@ -45,7 +45,7 @@ class menuView: UIViewController
             }
         
         var tracker:GAITracker = GAI.sharedInstance().defaultTracker as GAITracker
-        tracker.send(GAIDictionaryBuilder.createEventWithCategory("Menu", action: "MenuBeingViewed", label: "Menu", value: nil).build())
+        tracker.send(GAIDictionaryBuilder.createEventWithCategory("Menu", action: "MenuBeingViewed", label: "Menu", value: nil).build() as [NSObject : AnyObject])
     }
     
     
