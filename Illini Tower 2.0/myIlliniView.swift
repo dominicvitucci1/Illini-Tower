@@ -15,7 +15,7 @@ class myIlliniView: UIViewController {
         super.viewDidLoad()
         
         //Screen Tracking for Google Analytcis
-        var tracker:GAITracker = GAI.sharedInstance().defaultTracker as GAITracker
+        let tracker:GAITracker = GAI.sharedInstance().defaultTracker as GAITracker
         tracker.set(kGAIScreenName, value:"My Illini Tower Screen")
         tracker.send(GAIDictionaryBuilder.createScreenView().build() as [NSObject : AnyObject])
         

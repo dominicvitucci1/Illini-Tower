@@ -16,12 +16,13 @@ class ViewController: UIViewController, UIAlertViewDelegate {
         super.viewDidLoad()
         
         //Screen Tracking for Google Analytcis
-        var tracker:GAITracker = GAI.sharedInstance().defaultTracker as GAITracker
+        let tracker:GAITracker = GAI.sharedInstance().defaultTracker as GAITracker
         tracker.set(kGAIScreenName, value:"Home Screen")
         tracker.send(GAIDictionaryBuilder.createScreenView().build() as [NSObject : AnyObject])
         
         
         navigationItem.titleView = UIImageView(image: UIImage(named: "Top Bar Test"))
+        
         
         
         
@@ -60,7 +61,7 @@ class ViewController: UIViewController, UIAlertViewDelegate {
     {
         // Code for UIAlertView (ios7)
         
-        var callUsAlert: UIAlertView = UIAlertView()
+        let callUsAlert: UIAlertView = UIAlertView()
         
         callUsAlert.delegate = self
         
@@ -108,7 +109,7 @@ class ViewController: UIViewController, UIAlertViewDelegate {
             NSLog("calling")
             
         default:
-            println("alertView \(buttonIndex) clicked")
+            print("alertView \(buttonIndex) clicked")
             
             
         }
@@ -154,7 +155,7 @@ class ViewController: UIViewController, UIAlertViewDelegate {
             
             if let destinationVC = segue.destinationViewController as? WebViewController
             {
-                destinationVC.urlPath = "http://instagram.com/illinitower" as String
+                destinationVC.urlPath = "http://instagram.com/IlliniTower" as String
             }
             
             
@@ -164,7 +165,7 @@ class ViewController: UIViewController, UIAlertViewDelegate {
             
             if let destinationVC = segue.destinationViewController as? WebViewController
             {
-                destinationVC.urlPath = "http://www.twitter.com/illinitower" as String
+                destinationVC.urlPath = "http://twitter.com/Illini_Tower" as String
             }
             
             

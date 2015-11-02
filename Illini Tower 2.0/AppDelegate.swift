@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import Parse
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        UIApplication.sharedApplication().statusBarStyle = .LightContent
         
         //Google Analytics Setup
         GAI.sharedInstance().trackUncaughtExceptions = true
@@ -40,8 +41,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             // iOS 8 Notifications
             // Code for iOS 8 with Parse.com
             
-            application.registerUserNotificationSettings(UIUserNotificationSettings(forTypes: (.Badge | .Sound | .Alert), categories: nil));
-            application.registerForRemoteNotifications()
+            
+                application.registerUserNotificationSettings(UIUserNotificationSettings(forTypes: ([.Badge, .Sound, .Alert]), categories: nil))
+            
+                application.registerForRemoteNotifications()
+
             NSLog("Device is running iOS 8 or above")
         }
         else
@@ -49,7 +53,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             // iOS < 8 Notifications
             // Code for iOS 7 with Parse.com
             
-            application.registerForRemoteNotificationTypes(.Badge | .Sound | .Alert)
+            //application.registerForRemoteNotificationTypes([.Badge, .Sound, .Alert])
             NSLog("Device is running iOS 7 or earlier")
         }
         
@@ -76,33 +80,36 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     
+    @available(iOS 8.0, *)
     func application(application: UIApplication, didRegisterUserNotificationSettings notificationSettings: UIUserNotificationSettings) {
-        UIApplication.sharedApplication().registerForRemoteNotifications()
+        
+            UIApplication.sharedApplication().registerForRemoteNotifications()
+        
         
     }
     
     
     func application(application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: NSData) {
         
-        var currentInstallation: PFInstallation = PFInstallation.currentInstallation()
+        let currentInstallation: PFInstallation = PFInstallation.currentInstallation()
         currentInstallation.setDeviceTokenFromData(deviceToken)
         currentInstallation.saveInBackground()
         
-        println("got device id! \(deviceToken)")
+        print("got device id! \(deviceToken)")
         
     }
     
     
     func application(application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: NSError) {
-        println(error.localizedDescription)
-        println("could not register: \(error)")
+        print(error.localizedDescription)
+        print("could not register: \(error)")
     }
     
     
     func application(application: UIApplication, didReceiveRemoteNotification userInfo: [NSObject: AnyObject]) {
         //PFPush.handlePush(userInfo)
         
-        var notification: NSDictionary = userInfo ["aps"] as! NSDictionary
+        let notification: NSDictionary = userInfo ["aps"] as! NSDictionary
         
         
         
@@ -110,7 +117,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // Code for UIAlertView (ios7)
         
-        var pushAlert: UIAlertView = UIAlertView()
+        let pushAlert: UIAlertView = UIAlertView()
         
         pushAlert.delegate = self
         
@@ -120,7 +127,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         pushAlert.show()
         
-        println("Recieved Notification")
+        print("Recieved Notification")
 
     }
     
@@ -154,7 +161,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     lazy var applicationDocumentsDirectory: NSURL = {
         // The directory the application uses to store the Core Data store file. This code uses a directory named "dominicvitucci.Illini_Tower_2_0" in the application's documents Application Support directory.
         let urls = NSFileManager.defaultManager().URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask)
-        return urls[urls.count-1] as! NSURL
+        return urls[urls.count-1] 
     }()
 
     lazy var managedObjectModel: NSManagedObjectModel = {
@@ -170,10 +177,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let url = self.applicationDocumentsDirectory.URLByAppendingPathComponent("Illini_Tower_2_0.sqlite")
         var error: NSError? = nil
         var failureReason = "There was an error creating or loading the application's saved data."
-        if coordinator!.addPersistentStoreWithType(NSSQLiteStoreType, configuration: nil, URL: url, options: nil, error: &error) == nil {
+        do {
+            try coordinator!.addPersistentStoreWithType(NSSQLiteStoreType, configuration: nil, URL: url, options: nil)
+        } catch var error1 as NSError {
+            error = error1
             coordinator = nil
             // Report any error we got.
-            let dict = NSMutableDictionary()
+            var dict = [NSObject : AnyObject]()
             dict[NSLocalizedDescriptionKey] = "Failed to initialize the application's saved data"
             dict[NSLocalizedFailureReasonErrorKey] = failureReason
             dict[NSUnderlyingErrorKey] = error
@@ -182,6 +192,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
             NSLog("Unresolved error \(error), \(error!.userInfo)")
             abort()
+        } catch {
+            fatalError()
         }
         
         return coordinator
@@ -203,11 +215,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func saveContext () {
         if let moc = self.managedObjectContext {
             var error: NSError? = nil
-            if moc.hasChanges && !moc.save(&error) {
-                // Replace this implementation with code to handle the error appropriately.
-                // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-                NSLog("Unresolved error \(error), \(error!.userInfo)")
-                abort()
+            if moc.hasChanges {
+                do {
+                    try moc.save()
+                } catch let error1 as NSError {
+                    error = error1
+                    // Replace this implementation with code to handle the error appropriately.
+                    // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
+                    NSLog("Unresolved error \(error), \(error!.userInfo)")
+                    abort()
+                }
             }
         }
     }

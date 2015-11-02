@@ -8,11 +8,12 @@
 
 import UIKit
 
-class WebViewController: UIViewController {
+class WebViewController: UIViewController, UIWebViewDelegate {
 
     @IBOutlet var myWebView: UIWebView!
     
     var urlPath = ""
+    var loadingActivity = CozyLoadingActivity()
     
     
     
@@ -20,7 +21,7 @@ class WebViewController: UIViewController {
     {
         
         super.loadView()
-        
+        myWebView.delegate = self
         loadURL()
     }
     
@@ -58,4 +59,23 @@ class WebViewController: UIViewController {
         
         myWebView.loadRequest(request)
     }
+    
+    func webViewDidStartLoad(_ :UIWebView){
+        if (urlPath == "http://instagram.com/IlliniTower") {
+            
+        }
+        else {
+        loadingActivity = CozyLoadingActivity(text: "Loading...", sender: self, disableUI: true)
+        }
+        
+    }
+    func webViewDidFinishLoad(_ :UIWebView){
+        if (urlPath == "http://instagram.com/IlliniTower") {
+            
+        }
+        else {
+        loadingActivity.hideLoadingActivity(success: true, animated: true)
+        }
+    }
+
 }

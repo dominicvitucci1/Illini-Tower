@@ -14,7 +14,7 @@ import AddressBook
 
 class Point: NSObject, MKAnnotation {
     
-    let title: String
+    let title: String?
     let locationName: String
     let discipline: String
     let coordinate: CLLocationCoordinate2D
@@ -28,13 +28,13 @@ class Point: NSObject, MKAnnotation {
         super.init()
     }
     
-    var subtitle: String {
+    var subtitle: String? {
         return locationName
     }
     
     // annotation callout info button opens this mapItem in Maps app
     func mapItem() -> MKMapItem {
-        let addressDictionary = [String(kABPersonAddressStreetKey): subtitle]
+        let addressDictionary = [String(kABPersonAddressStreetKey): title!]
         let placemark = MKPlacemark(coordinate: coordinate, addressDictionary: addressDictionary)
         
         let mapItem = MKMapItem(placemark: placemark)

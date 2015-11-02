@@ -7,15 +7,16 @@
 //
 
 import UIKit
+import Parse
+import Bolts
 
-class menuView: UIViewController
+class menuView: UIViewController, UIWebViewDelegate
 
 {
 
     @IBOutlet weak var webView: UIWebView!
     
-    
-    
+    var loadingActivity = CozyLoadingActivity()
     
     
     override func loadView()
@@ -28,13 +29,13 @@ class menuView: UIViewController
     
     override func viewDidLoad()
     {
-        
         super.viewDidLoad()
+        webView.delegate = self
         
-        PFConfig.getConfigInBackgroundWithBlock
-            {
-            (config: PFConfig!, error: NSError!) -> Void in
-            let menu = config["menuLink"] as! String
+        PFConfig.getConfigInBackgroundWithBlock {
+            (var config: PFConfig?, error: NSError?) -> Void in
+            if error == nil {
+                let menu = config?["menuLink"] as! String
                 NSLog("Menu Opened")
                 
                 let requestURL = NSURL(string: menu)
@@ -42,12 +43,36 @@ class menuView: UIViewController
                 let request = NSURLRequest(URL: requestURL!)
                 
                 self.webView.loadRequest(request)
+            } else {
+                print("Failed to fetch. Using Cached Config.")
+                config = PFConfig.currentConfig()
+            }
+    
+//        PFConfig.getConfigInBackgroundWithBlock {
+//            (config: PFConfig!, error: NSError!) -> Void in
+//            let menu = config["menuLink"] as! String
+//                NSLog("Menu Opened")
+//                
+//                let requestURL = NSURL(string: menu)
+//                
+//                let request = NSURLRequest(URL: requestURL!)
+//                
+//                self.webView.loadRequest(request)
             }
         
-        var tracker:GAITracker = GAI.sharedInstance().defaultTracker as GAITracker
+        let tracker:GAITracker = GAI.sharedInstance().defaultTracker as GAITracker
         tracker.send(GAIDictionaryBuilder.createEventWithCategory("Menu", action: "MenuBeingViewed", label: "Menu", value: nil).build() as [NSObject : AnyObject])
     }
     
+    func webViewDidStartLoad(_ :UIWebView){
+    loadingActivity = CozyLoadingActivity(text: "Loading...", sender: self, disableUI: true)
+    
+    
+    }
+    func webViewDidFinishLoad(_ :UIWebView){
+    loadingActivity.hideLoadingActivity(success: true, animated: true)
+    
+    }
     
     
     override func didReceiveMemoryWarning() {

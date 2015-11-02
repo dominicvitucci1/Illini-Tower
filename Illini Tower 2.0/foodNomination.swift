@@ -8,6 +8,8 @@
 
 import UIKit
 import MessageUI
+import Parse
+import Bolts
 
 
 class foodNomination: UIViewController, MFMailComposeViewControllerDelegate, UITextFieldDelegate, UITextViewDelegate
@@ -19,10 +21,15 @@ class foodNomination: UIViewController, MFMailComposeViewControllerDelegate, UIT
     
     @IBOutlet weak var foodNomination: UITextField!
     
+    var toEmail = ""
+    var toName = ""
+    var messageText = ""
+    var subject = ""
+    var fromName = ""
     
     
     var kPreferredTextFieldToKeyboardOffset: CGFloat = 55.0
-    var keyboardFrame: CGRect = CGRect.nullRect
+    var keyboardFrame: CGRect = CGRect.null
     var keyboardIsShowing: Bool = false
     weak var activeTextField: UITextField?
     
@@ -42,7 +49,7 @@ class foodNomination: UIViewController, MFMailComposeViewControllerDelegate, UIT
         {
             if (subview.isKindOfClass(UITextField))
             {
-                var textField = subview as! UITextField
+                let textField = subview as! UITextField
                 textField.addTarget(self, action: "textFieldDidReturn:", forControlEvents: UIControlEvents.EditingDidEndOnExit)
                 
                 textField.addTarget(self, action: "textFieldDidBeginEditing:", forControlEvents: UIControlEvents.EditingDidBegin)
@@ -77,17 +84,17 @@ class foodNomination: UIViewController, MFMailComposeViewControllerDelegate, UIT
     
     func arrangeViewOffsetFromKeyboard()
     {
-        var theApp: UIApplication = UIApplication.sharedApplication()
-        var windowView: UIView? = theApp.delegate!.window!
+        let theApp: UIApplication = UIApplication.sharedApplication()
+        let windowView: UIView? = theApp.delegate!.window!
         
-        var textFieldLowerPoint: CGPoint = CGPointMake(self.activeTextField!.frame.origin.x, self.activeTextField!.frame.origin.y + self.activeTextField!.frame.size.height)
+        let textFieldLowerPoint: CGPoint = CGPointMake(self.activeTextField!.frame.origin.x, self.activeTextField!.frame.origin.y + self.activeTextField!.frame.size.height)
         
-        var convertedTextFieldLowerPoint: CGPoint = self.view.convertPoint(textFieldLowerPoint, toView: windowView)
+        let convertedTextFieldLowerPoint: CGPoint = self.view.convertPoint(textFieldLowerPoint, toView: windowView)
         
-        var targetTextFieldLowerPoint: CGPoint = CGPointMake(self.activeTextField!.frame.origin.x, self.keyboardFrame.origin.y - kPreferredTextFieldToKeyboardOffset)
+        let targetTextFieldLowerPoint: CGPoint = CGPointMake(self.activeTextField!.frame.origin.x, self.keyboardFrame.origin.y - kPreferredTextFieldToKeyboardOffset)
         
-        var targetPointOffset: CGFloat = targetTextFieldLowerPoint.y - convertedTextFieldLowerPoint.y
-        var adjustedViewFrameCenter: CGPoint = CGPointMake(self.view.center.x, self.view.center.y + targetPointOffset)
+        let targetPointOffset: CGFloat = targetTextFieldLowerPoint.y - convertedTextFieldLowerPoint.y
+        let adjustedViewFrameCenter: CGPoint = CGPointMake(self.view.center.x, self.view.center.y + targetPointOffset)
         
         UIView.animateWithDuration(0.2, animations:  {
             self.view.center = adjustedViewFrameCenter
@@ -96,7 +103,7 @@ class foodNomination: UIViewController, MFMailComposeViewControllerDelegate, UIT
     
     func returnViewToInitialFrame()
     {
-        var initialViewRect: CGRect = CGRectMake(0.0, 0.0, self.view.frame.size.width, self.view.frame.size.height)
+        let initialViewRect: CGRect = CGRectMake(0.0, 60.0, self.view.frame.size.width, self.view.frame.size.height)
         
         if (!CGRectEqualToRect(initialViewRect, self.view.frame))
         {
@@ -106,7 +113,7 @@ class foodNomination: UIViewController, MFMailComposeViewControllerDelegate, UIT
         }
     }
     
-    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent)
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?)
     {
         if (self.activeTextField != nil)
         {
@@ -153,52 +160,125 @@ class foodNomination: UIViewController, MFMailComposeViewControllerDelegate, UIT
     @IBAction func sendSuggestion(sender: AnyObject)
     {
         
-        
-        let mailComposeViewController = configuredMailComposeViewController()
-        if MFMailComposeViewController.canSendMail() {
-            self.presentViewController(mailComposeViewController, animated: true, completion: nil)
+        if (nameNomination.text!.isEmpty || roomNumberNomination.text! .isEmpty || foodNomination.text!.isEmpty) {
+            
+            let alertController = UIAlertController(title: NSLocalizedString("Please fill out all required information", comment: ""), message: "", preferredStyle: .Alert)
+            
+            // Create the actions
+            
+            let cancelAction = UIAlertAction(title: NSLocalizedString("Okay", comment: ""), style: UIAlertActionStyle.Cancel) {
+                UIAlertAction in
+                NSLog("Cancel Pressed")
+            }
+            
+            // Add the actions
+            alertController.addAction(cancelAction)
+            
+            // Present the controller
+            self.presentViewController(alertController, animated: true, completion: nil)
         }
             
-        else
-        {
-            self.showSendMailErrorAlert()
-        }
-    }
-    
-    func configuredMailComposeViewController() -> MFMailComposeViewController {
-        let mailComposerVC = MFMailComposeViewController()
-        mailComposerVC.mailComposeDelegate = self // Extremely important to set the --mailComposeDelegate-- property, NOT the --delegate-- property
+        else {
+            
+        let loadingActivity = CozyLoadingActivity(text: "Sending...", sender: self, disableUI: true)
         
         let name = nameNomination.text
         let room = roomNumberNomination.text
         let food = foodNomination.text
         
         
+        var message = "Name: " + name! + "\n" + "Room Number: " + room!
+        message += "\n" + "Nominated Food: " + food!
         
+        messageText = message
+        toName = nameNomination.text!
+        toEmail = "TheSkillet@illinitower.net"
+        subject = "Food Nomination From" + " " + toName
+
         
-        var message = "Name: " + name + "\n" + "Room Number: " + room + "\n" + "Nominated Food: " + food
+        PFCloud.callFunctionInBackground("sendMail", withParameters: ["text": messageText, "toEmail": toEmail, "name": toName, "subject": subject]) {
+            (response: AnyObject?, error: NSError?) -> Void in
+            let responseString = response as? String
+            print(responseString)
+            
+            if response !== nil {
+                
+                loadingActivity.hideLoadingActivity(success: true, animated: true)
+                
+                let alertController = UIAlertController(title: "Your nomination has been sent", message: "Illini Tower thanks you for your input", preferredStyle: .Alert)
+                
+                // Create the actions
+                
+                let cancelAction = UIAlertAction(title: NSLocalizedString("Okay", comment: ""), style: UIAlertActionStyle.Cancel) {
+                    UIAlertAction in
+                    NSLog("Cancel Pressed")
+                }
+                
+                // Add the actions
+                alertController.addAction(cancelAction)
+                
+                // Present the controller
+                self.presentViewController(alertController, animated: true, completion: nil)
+                
+                
+                self.nameNomination.text = ""
+                self.roomNumberNomination.text = ""
+                self.foodNomination.text = ""
+            
+            
+            } else {
+            //  Log details of the failure
+                print("Error: \(error!) \(error!.userInfo)")
+            }
+        }
+        }
         
-        
-        mailComposerVC.setToRecipients(["TheSkillet@illinitower.net"])
-        mailComposerVC.setSubject("Food Nomination")
-        mailComposerVC.setMessageBody(message, isHTML: false)
-        
-        nameNomination.text = ""
-        roomNumberNomination.text = ""
-        foodNomination.text = ""
-        
-        return mailComposerVC
-        
+//        let mailComposeViewController = configuredMailComposeViewController()
+//        if MFMailComposeViewController.canSendMail() {
+//            self.presentViewController(mailComposeViewController, animated: true, completion: nil)
+//        }
+//            
+//        else
+//        {
+//            self.showSendMailErrorAlert()
+//        }
+//    }
+//    
+//    func configuredMailComposeViewController() -> MFMailComposeViewController {
+//        let mailComposerVC = MFMailComposeViewController()
+//        mailComposerVC.mailComposeDelegate = self // Extremely important to set the --mailComposeDelegate-- property, NOT the --delegate-- property
+//        
+//        let name = nameNomination.text
+//        let room = roomNumberNomination.text
+//        let food = foodNomination.text
+//        
+//        
+//        
+//        
+//        var message = "Name: " + name! + "\n" + "Room Number: " + room!
+//        message += "\n" + "Nominated Food: " + food!
+//        
+//        
+//        mailComposerVC.setToRecipients(["TheSkillet@illinitower.net"])
+//        mailComposerVC.setSubject("Food Nomination")
+//        mailComposerVC.setMessageBody(message, isHTML: false)
+//        
+//        nameNomination.text = ""
+//        roomNumberNomination.text = ""
+//        foodNomination.text = ""
+//        
+//        return mailComposerVC
+//        
         
     }
     
-    func showSendMailErrorAlert() {
-        let sendMailErrorAlert = UIAlertView(title: "Could Not Send Email", message: "Your device could not send e-mail.  Please check e-mail configuration and try again.", delegate: self, cancelButtonTitle: "OK")
-        sendMailErrorAlert.show()
-    }
-    
-    // MARK: MFMailComposeViewControllerDelegate Method
-    func mailComposeController(controller: MFMailComposeViewController!, didFinishWithResult result: MFMailComposeResult, error: NSError!) {
-        controller.dismissViewControllerAnimated(true, completion: nil)
-    }
+//    func showSendMailErrorAlert() {
+//        let sendMailErrorAlert = UIAlertView(title: "Could Not Send Email", message: "Your device could not send e-mail.  Please check e-mail configuration and try again.", delegate: self, cancelButtonTitle: "OK")
+//        sendMailErrorAlert.show()
+//    }
+//    
+//    // MARK: MFMailComposeViewControllerDelegate Method
+//    func mailComposeController(controller: MFMailComposeViewController, didFinishWithResult result: MFMailComposeResult, error: NSError?) {
+//        controller.dismissViewControllerAnimated(true, completion: nil)
+//    }
 }

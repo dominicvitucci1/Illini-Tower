@@ -18,13 +18,13 @@ class whatsNearBy: UIViewController, MKMapViewDelegate {
             super.viewDidLoad()
             map.delegate = self
             
-            var initialLocation = CLLocationCoordinate2D(
+            let initialLocation = CLLocationCoordinate2D(
                 latitude: 40.106485,
                 longitude: -88.232341
             )
             
-            var span1 = MKCoordinateSpanMake(0.01, 0.01)
-            var region1 = MKCoordinateRegion(center: initialLocation, span: span1)
+            let span1 = MKCoordinateSpanMake(0.01, 0.01)
+            let region1 = MKCoordinateRegion(center: initialLocation, span: span1)
             
             map.setRegion(region1, animated: true)
             
@@ -32,7 +32,7 @@ class whatsNearBy: UIViewController, MKMapViewDelegate {
         
     }
     
-    func mapView(mapView: MKMapView!, viewForAnnotation annotation: MKAnnotation!) -> MKAnnotationView! {
+    func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView? {
         
         NSLog("viewForannotation")
         if annotation is MKUserLocation {
@@ -50,7 +50,7 @@ class whatsNearBy: UIViewController, MKMapViewDelegate {
             pinView!.animatesDrop = true
         }
         
-        var button = UIButton.buttonWithType(UIButtonType.DetailDisclosure) as! UIButton // button with info sign in it
+        let button = UIButton(type: UIButtonType.DetailDisclosure) // button with info sign in it
         
         pinView?.rightCalloutAccessoryView = button
         
@@ -59,8 +59,8 @@ class whatsNearBy: UIViewController, MKMapViewDelegate {
     }
     
     
-    func mapView(mapView: MKMapView!, annotationView view: MKAnnotationView!,
-        calloutAccessoryControlTapped control: UIControl!) {
+    func mapView(mapView: MKMapView, annotationView view: MKAnnotationView,
+        calloutAccessoryControlTapped control: UIControl) {
             let location = view.annotation as! Point
             let launchOptions = [MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeDriving]
             location.mapItem().openInMapsWithLaunchOptions(launchOptions)
