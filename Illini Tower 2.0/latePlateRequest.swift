@@ -51,18 +51,18 @@ class latePlateRequest: UIViewController, MFMailComposeViewControllerDelegate, U
 
         
         
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillShow:", name: UIKeyboardWillShowNotification, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(latePlateRequest.keyboardWillShow(_:)), name: UIKeyboardWillShowNotification, object: nil)
         
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillHide:", name: UIKeyboardWillHideNotification, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(latePlateRequest.keyboardWillHide(_:)), name: UIKeyboardWillHideNotification, object: nil)
         
         for subview in self.view.subviews
         {
             if (subview.isKindOfClass(UITextField))
             {
                 let textField = subview as! UITextField
-                textField.addTarget(self, action: "textFieldDidReturn:", forControlEvents: UIControlEvents.EditingDidEndOnExit)
+                textField.addTarget(self, action: #selector(latePlateRequest.textFieldDidReturn(_:)), forControlEvents: UIControlEvents.EditingDidEndOnExit)
                 
-                textField.addTarget(self, action: "textFieldDidBeginEditing:", forControlEvents: UIControlEvents.EditingDidBegin)
+                textField.addTarget(self, action: #selector(UITextFieldDelegate.textFieldDidBeginEditing(_:)), forControlEvents: UIControlEvents.EditingDidBegin)
                 
             }
         }
@@ -263,11 +263,11 @@ class latePlateRequest: UIViewController, MFMailComposeViewControllerDelegate, U
             
             messageText = message
             toName = plateName.text!
-            toEmail = "TheSkillet@illinitower.net"
+            toEmail = "dominicvitucci1@gmail.com"
             subject = "Late Plate Request From" + " " + toName
             
             
-            PFCloud.callFunctionInBackground("sendMail", withParameters: ["text": messageText, "toEmail": toEmail, "name": toName, "subject": subject]) {
+            PFCloud.callFunctionInBackground("sendEmailTwo", withParameters: ["text": messageText, "toEmail": toEmail, "name": toName, "subject": subject]) {
                 (response: AnyObject?, error: NSError?) -> Void in
                 let responseString = response as? String
                 print(responseString)
@@ -279,7 +279,7 @@ class latePlateRequest: UIViewController, MFMailComposeViewControllerDelegate, U
                     let tracker:GAITracker = GAI.sharedInstance().defaultTracker as GAITracker
                     tracker.send(GAIDictionaryBuilder.createEventWithCategory("LatePlateRequest", action: "LatePlateRequested", label: "LatePlateRequest", value: nil).build() as [NSObject : AnyObject])
                     
-                    let alertController = UIAlertController(title: "Your late plate request has been sent", message: "Illini Tower thanks you for your input", preferredStyle: .Alert)
+                    let alertController = UIAlertController(title: "Your late plate request has been sent", message: "Illini Tower thanks you for your request", preferredStyle: .Alert)
                     
                     // Create the actions
                     
