@@ -36,7 +36,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         NSLog("started Parse")
         
         
-        if application.respondsToSelector("isRegisteredForRemoteNotifications")
+        if application.respondsToSelector(#selector(UIApplication.isRegisteredForRemoteNotifications))
         {
             // iOS 8 Notifications
             // Code for iOS 8 with Parse.com

@@ -196,7 +196,7 @@ class foodNomination: UIViewController, MFMailComposeViewControllerDelegate, UIT
         subject = "Food Nomination From" + " " + toName
 
         
-        PFCloud.callFunctionInBackground("sendMail", withParameters: ["text": messageText, "toEmail": toEmail, "name": toName, "subject": subject]) {
+        PFCloud.callFunctionInBackground("sendEmailTwo", withParameters: ["text": messageText, "toEmail": toEmail, "name": toName, "subject": subject]) {
             (response: AnyObject?, error: NSError?) -> Void in
             let responseString = response as? String
             print(responseString)

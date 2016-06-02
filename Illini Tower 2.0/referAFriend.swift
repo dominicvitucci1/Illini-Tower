@@ -49,18 +49,18 @@ class referAFriend: UIViewController, MFMailComposeViewControllerDelegate, UITex
         friendsMoveInField.delegate = self
         
         
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillShow:", name: UIKeyboardWillShowNotification, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(referAFriend.keyboardWillShow(_:)), name: UIKeyboardWillShowNotification, object: nil)
         
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillHide:", name: UIKeyboardWillHideNotification, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(referAFriend.keyboardWillHide(_:)), name: UIKeyboardWillHideNotification, object: nil)
         
         for subview in self.view.subviews
         {
             if (subview.isKindOfClass(UITextField))
             {
                 let textField = subview as! UITextField
-                textField.addTarget(self, action: "textFieldDidReturn:", forControlEvents: UIControlEvents.EditingDidEndOnExit)
+                textField.addTarget(self, action: #selector(referAFriend.textFieldDidReturn(_:)), forControlEvents: UIControlEvents.EditingDidEndOnExit)
                 
-                textField.addTarget(self, action: "textFieldDidBeginEditing:", forControlEvents: UIControlEvents.EditingDidBegin)
+                textField.addTarget(self, action: #selector(UITextFieldDelegate.textFieldDidBeginEditing(_:)), forControlEvents: UIControlEvents.EditingDidBegin)
                 
             }
         }
@@ -203,7 +203,7 @@ class referAFriend: UIViewController, MFMailComposeViewControllerDelegate, UITex
                 subject = "Refer a Friend From" + " " + toName
                 
                 
-                PFCloud.callFunctionInBackground("sendMail", withParameters: ["text": messageText, "toEmail": toEmail, "name": toName, "subject": subject]) {
+                PFCloud.callFunctionInBackground("sendEmailTwo", withParameters: ["text": messageText, "toEmail": toEmail, "name": toName, "subject": subject]) {
                     (response: AnyObject?, error: NSError?) -> Void in
                     let responseString = response as? String
                     print(responseString)

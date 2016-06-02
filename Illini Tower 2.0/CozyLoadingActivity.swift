@@ -133,11 +133,11 @@ class CozyLoadingActivity: UIView {
             UIView.animateWithDuration(animationDuration, animations: {
                 self.icon.alpha = 1
                 }, completion: { (value: Bool) in
-                    self.callSelectorAsync("removeFromSuperview", delay: animationDuration)
+                    self.callSelectorAsync(#selector(UIView.removeFromSuperview), delay: animationDuration)
             })
         } else {
             activityView.stopAnimating()
-            self.callSelectorAsync("removeFromSuperview", delay: animationDuration)
+            self.callSelectorAsync(#selector(UIView.removeFromSuperview), delay: animationDuration)
         }
     }
     
